@@ -1,0 +1,106 @@
+{
+  "inst": "eurusd",
+  "name": "EUR/USD",
+  "parked": false,
+  "unit": "pips",
+  "dp": 5,
+  "pip_mult": 10000,
+  "pip_value": 0.1,
+  "box": [
+    1.135,
+    1.145
+  ],
+  "setup": {
+    "trend": "down",
+    "ema8": 1.14234,
+    "dist_ema8_pips": 18.6,
+    "waiting": "Downtrend intact \u2014 waiting for a pullback to the 8-EMA to go short.",
+    "plan": null
+  },
+  "patterns": [
+    {
+      "name": "Inside bar",
+      "dir": "neutral",
+      "tier": "watch",
+      "at_level": true,
+      "with_trend": false,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    },
+    {
+      "name": "Tweezer top",
+      "dir": "bearish",
+      "tier": "act",
+      "at_level": true,
+      "with_trend": true,
+      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+    }
+  ],
+  "updated": "08:43:45",
+  "updated_full": "Tue 07 Jul 2026 08:43 GST",
+  "price": 1.1442,
+  "daily": {
+    "ema50": 1.15432,
+    "ema200": 1.15892,
+    "rsi": 43.29935,
+    "atr": 0.00634,
+    "trend": "BEARISH"
+  },
+  "h1": {
+    "ema50": 1.14354,
+    "ema200": 1.14269,
+    "rsi": 53.40875,
+    "atr": 0.00064,
+    "trend": "BULLISH"
+  },
+  "h1_atr_pips": 6.4,
+  "levels": [
+    {
+      "name": "ceiling",
+      "price": 1.145,
+      "dist_pips": -8.0
+    },
+    {
+      "name": "floor",
+      "price": 1.14,
+      "dist_pips": 42.0
+    },
+    {
+      "name": "hard_floor",
+      "price": 1.135,
+      "dist_pips": 92.0
+    }
+  ],
+  "nearest": {
+    "name": "ceiling",
+    "price": 1.145,
+    "dist_pips": -8.0
+  },
+  "box_pos": 0.92,
+  "regime": "CHOPPY",
+  "gate": {
+    "open": false,
+    "trigger": true,
+    "direction_aligned": false,
+    "regime_ok": false
+  },
+  "verdict": "NO TRADE \u2014 PATIENCE",
+  "desks": {
+    "chartist": {
+      "status": "hold",
+      "read": "Daily bearish, price under the EMAs; choppy. RSI 53.4. Nearest level 1.145 (-8.0 pips). Trigger in play."
+    },
+    "quant": {
+      "status": "hold",
+      "read": "Volatility dead/coiling (1H ATR ~6 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+    },
+    "risk": {
+      "status": "go",
+      "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
+    },
+    "trade": {
+      "status": "idle",
+      "read": "On standby until a level and a clean trigger appear together."
+    }
+  },
+  "source": "Yahoo EURUSD=X (free feed; ~1-2 pips off OANDA)"
+}
