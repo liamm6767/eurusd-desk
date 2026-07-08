@@ -12,74 +12,82 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.1422,
-    "dist_ema8_pips": -5.0,
+    "ema8": 1.14203,
+    "dist_ema8_pips": -11.3,
     "waiting": "Downtrend intact \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
   "patterns": [
     {
+      "name": "Shooting star / bearish pin",
+      "dir": "bearish",
+      "tier": "act",
+      "at_level": true,
+      "with_trend": true,
+      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+    },
+    {
       "name": "Tweezer bottom",
       "dir": "bullish",
-      "tier": "noise",
-      "at_level": false,
+      "tier": "watch",
+      "at_level": true,
       "with_trend": false,
-      "note": "A pattern with no level is just a candle. Ignore it."
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     }
   ],
-  "updated": "14:45:22",
-  "updated_full": "Wed 08 Jul 2026 14:45 GST",
-  "price": 1.1417,
+  "updated": "15:05:35",
+  "updated_full": "Wed 08 Jul 2026 15:05 GST",
+  "price": 1.1409,
   "daily": {
-    "ema50": 1.15382,
-    "ema200": 1.15875,
-    "rsi": 40.33064,
+    "ema50": 1.15379,
+    "ema200": 1.15874,
+    "rsi": 39.47737,
     "atr": 0.00625,
     "trend": "BEARISH"
   },
   "h1": {
-    "ema50": 1.1425,
-    "ema200": 1.14259,
-    "rsi": 46.15191,
-    "atr": 0.00093,
+    "ema50": 1.14239,
+    "ema200": 1.14256,
+    "rsi": 41.24561,
+    "atr": 0.00089,
     "trend": "BEARISH"
   },
-  "h1_atr_pips": 9.3,
+  "h1_atr_pips": 8.9,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -33.0
+      "dist_pips": -41.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 17.0
+      "dist_pips": 9.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 67.0
+      "dist_pips": 59.0
     }
   ],
   "nearest": {
     "name": "floor",
     "price": 1.14,
-    "dist_pips": 17.0
+    "dist_pips": 9.0
   },
-  "box_pos": 0.67,
+  "box_pos": 0.59,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
-    "trigger": false,
+    "trigger": true,
     "direction_aligned": true,
     "regime_ok": false
   },
   "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
-      "status": "hold",
-      "read": "Daily bearish, price under the EMAs; choppy. RSI 46.2. Nearest level 1.14 (17.0 pips). No trigger at a level yet."
+      "status": "go",
+      "read": "Daily bearish, price under the EMAs; choppy. RSI 41.2. Nearest level 1.14 (9.0 pips). Trigger in play."
     },
     "quant": {
       "status": "hold",
