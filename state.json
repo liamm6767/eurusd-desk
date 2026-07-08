@@ -12,12 +12,20 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.14214,
-    "dist_ema8_pips": -7.4,
+    "ema8": 1.14211,
+    "dist_ema8_pips": -8.1,
     "waiting": "Downtrend intact \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
   "patterns": [
+    {
+      "name": "Shooting star / bearish pin",
+      "dir": "bearish",
+      "tier": "act",
+      "at_level": true,
+      "with_trend": true,
+      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+    },
     {
       "name": "Tweezer bottom",
       "dir": "bullish",
@@ -27,47 +35,47 @@
       "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     }
   ],
-  "updated": "18:07:24",
-  "updated_full": "Wed 08 Jul 2026 18:07 GST",
-  "price": 1.1414,
+  "updated": "18:27:36",
+  "updated_full": "Wed 08 Jul 2026 18:27 GST",
+  "price": 1.1413,
   "daily": {
     "ema50": 1.15381,
-    "ema200": 1.15875,
-    "rsi": 40.04193,
+    "ema200": 1.15874,
+    "rsi": 39.89918,
     "atr": 0.00628,
     "trend": "BEARISH"
   },
   "h1": {
-    "ema50": 1.14221,
+    "ema50": 1.1422,
     "ema200": 1.14251,
-    "rsi": 47.36688,
-    "atr": 0.00096,
+    "rsi": 46.36069,
+    "atr": 0.00097,
     "trend": "BEARISH"
   },
-  "h1_atr_pips": 9.6,
+  "h1_atr_pips": 9.7,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -36.0
+      "dist_pips": -37.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 14.0
+      "dist_pips": 13.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 64.0
+      "dist_pips": 63.0
     }
   ],
   "nearest": {
     "name": "floor",
     "price": 1.14,
-    "dist_pips": 14.0
+    "dist_pips": 13.0
   },
-  "box_pos": 0.64,
+  "box_pos": 0.63,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
@@ -79,7 +87,7 @@
   "desks": {
     "chartist": {
       "status": "go",
-      "read": "Daily bearish, price under the EMAs; choppy. RSI 47.4. Nearest level 1.14 (14.0 pips). Trigger in play."
+      "read": "Daily bearish, price under the EMAs; choppy. RSI 46.4. Nearest level 1.14 (13.0 pips). Trigger in play."
     },
     "quant": {
       "status": "hold",
