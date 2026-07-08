@@ -12,90 +12,66 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.14232,
-    "dist_ema8_pips": 16.8,
+    "ema8": 1.14226,
+    "dist_ema8_pips": -3.6,
     "waiting": "Downtrend intact \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
   "patterns": [
     {
-      "name": "Spinning top",
-      "dir": "neutral",
-      "tier": "watch",
-      "at_level": true,
+      "name": "Tweezer bottom",
+      "dir": "bullish",
+      "tier": "noise",
+      "at_level": false,
       "with_trend": false,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
-    },
-    {
-      "name": "Bearish engulfing",
-      "dir": "bearish",
-      "tier": "act",
-      "at_level": true,
-      "with_trend": true,
-      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
-    },
-    {
-      "name": "Inside bar",
-      "dir": "neutral",
-      "tier": "watch",
-      "at_level": true,
-      "with_trend": false,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
-    },
-    {
-      "name": "Tweezer top",
-      "dir": "bearish",
-      "tier": "act",
-      "at_level": true,
-      "with_trend": true,
-      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+      "note": "A pattern with no level is just a candle. Ignore it."
     }
   ],
-  "updated": "16:47:56",
-  "updated_full": "Tue 07 Jul 2026 16:47 GST",
-  "price": 1.144,
+  "updated": "09:01:41",
+  "updated_full": "Wed 08 Jul 2026 09:01 GST",
+  "price": 1.1419,
   "daily": {
-    "ema50": 1.15431,
-    "ema200": 1.15892,
-    "rsi": 43.09363,
-    "atr": 0.00642,
+    "ema50": 1.15383,
+    "ema200": 1.15875,
+    "rsi": 40.62354,
+    "atr": 0.00624,
     "trend": "BEARISH"
   },
   "h1": {
-    "ema50": 1.1435,
-    "ema200": 1.14274,
-    "rsi": 54.4666,
-    "atr": 0.00072,
-    "trend": "BULLISH"
+    "ema50": 1.14263,
+    "ema200": 1.14261,
+    "rsi": 46.33394,
+    "atr": 0.00075,
+    "trend": "MIXED"
   },
-  "h1_atr_pips": 7.2,
+  "h1_atr_pips": 7.5,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -10.0
+      "dist_pips": -31.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 40.0
+      "dist_pips": 19.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 90.0
+      "dist_pips": 69.0
     }
   ],
   "nearest": {
-    "name": "ceiling",
-    "price": 1.145,
-    "dist_pips": -10.0
+    "name": "floor",
+    "price": 1.14,
+    "dist_pips": 19.0
   },
-  "box_pos": 0.9,
+  "box_pos": 0.69,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
-    "trigger": true,
+    "trigger": false,
     "direction_aligned": false,
     "regime_ok": false
   },
@@ -103,11 +79,11 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "Daily bearish, price under the EMAs; choppy. RSI 54.5. Nearest level 1.145 (-10.0 pips). Trigger in play."
+      "read": "Daily bearish, price under the EMAs; choppy. RSI 46.3. Nearest level 1.14 (19.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility dead/coiling (1H ATR ~7 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility dead/coiling (1H ATR ~8 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
