@@ -56,6 +56,9 @@
   .brand b{font-size:19px;font-weight:800;letter-spacing:.16em}
   .brand .tag{font-size:11px;letter-spacing:.10em;text-transform:uppercase;color:var(--ink-faint)}
   .topright{display:flex;align-items:center;gap:12px}
+  .fresh{font-size:11px;font-weight:600;padding:5px 9px;border-radius:8px;background:var(--bull-bg);color:var(--bull);white-space:nowrap}
+  .fresh.stale{background:var(--neutral-bg);color:var(--neutral)}
+  .fresh.old{background:var(--bear-bg);color:var(--bear)}
   .clock{text-align:right}
   .clock .t{font-size:16px;font-weight:600}
   .clock .z{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint)}
@@ -64,16 +67,17 @@
   .toggle:hover{border-color:var(--accent);color:var(--accent)}
   .toggle:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
-  /* scrolling news ticker */
-  .ticker{overflow:hidden;border:1px solid var(--line);background:var(--panel);border-radius:10px;height:40px;display:flex;align-items:center;box-shadow:var(--shadow);margin-bottom:14px}
-  .ticker .rail{display:inline-flex;white-space:nowrap;will-change:transform;animation:tick 60s linear infinite}
+  /* scrolling news ticker — single line, clipped, marquee */
+  .ticker{position:relative;overflow:hidden;white-space:nowrap;border:1px solid var(--line);background:var(--panel);border-radius:10px;height:42px;line-height:42px;box-shadow:var(--shadow);margin-bottom:14px}
+  .ticker .rail{display:inline-block;white-space:nowrap;padding-left:100%;will-change:transform;animation:tick 90s linear infinite}
   .ticker:hover .rail{animation-play-state:paused}
-  .ticker .it{display:inline-flex;align-items:center;gap:8px;padding:0 22px;font-size:12.5px;color:var(--ink-soft);border-right:1px solid var(--line)}
+  .ticker .it{display:inline-block;white-space:nowrap;font-size:12.5px;color:var(--ink-soft);vertical-align:middle}
   .ticker .it b{color:var(--ink);font-weight:600}
-  .ticker .mk{font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:700;padding:2px 6px;border-radius:5px}
+  .ticker .sep{display:inline-block;color:var(--line-strong);padding:0 16px;vertical-align:middle}
+  .ticker .mk{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:700;padding:2px 7px;border-radius:5px;margin-right:8px;vertical-align:middle}
   .mk.cal{color:var(--bear);background:var(--bear-bg)} .mk.new{color:var(--accent);background:var(--accent-soft)}
-  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-  @media (prefers-reduced-motion:reduce){.ticker{overflow-x:auto}.ticker .rail{animation:none}}
+  @keyframes tick{from{transform:translateX(0)}to{transform:translateX(-100%)}}
+  @media (prefers-reduced-motion:reduce){.ticker{overflow-x:auto}.ticker .rail{animation:none;padding-left:0}}
 
   /* subtle 16:30 guard — hidden until it matters */
   #guardline{display:none;margin-bottom:14px}
@@ -214,12 +218,13 @@
   <div class="topbar">
     <div class="brand"><b>THE&nbsp;DESK</b><span class="tag">9 markets · one gate · your rules</span></div>
     <div class="topright">
+      <div class="fresh" id="dataAge" title="How old the prices are. Clocks & guard are real-time; prices refresh on the board's timer.">—</div>
       <div class="clock"><div class="t mono" id="gstClock">--:--:--</div><div class="z">GST · Dubai</div></div>
       <button class="toggle" id="themeBtn" aria-label="Toggle theme"><span id="themeIcon">☾</span><span id="themeLabel">Dark</span></button>
     </div>
   </div>
 
-  <div id="ticker"></div>
+  <div id="ticker" class="ticker"></div>
   <div id="guardline"><div class="guardpill">⛔ <span id="guardText">16:30 GST news drop approaching — stand down.</span></div></div>
 
   <div id="app"><div class="loading">Loading the desk…</div></div>
@@ -234,6 +239,7 @@
 (function(){
   "use strict";
   var TV={eurusd:"EURUSD",gold:"XAUUSD",gbpusd:"GBPUSD",usdjpy:"USDJPY",eurjpy:"EURJPY",usdchf:"USDCHF",usdcad:"USDCAD",audusd:"AUDUSD",wti:"USOIL"};
+  var lastEpoch=null;
 
   /* ---------- live clocks + subtle guard ---------- */
   var SESS=[{city:"Sydney",open:21,close:6},{city:"Tokyo",open:0,close:9},{city:"London",open:7,close:16},{city:"New York",open:12,close:21}];
@@ -254,6 +260,13 @@
     var mins=(target-now)/60000;
     if(mins<=60){guardLine.className="hot";guardText.textContent="16:30 GST news drop in "+fmtDur(mins/60)+" — no new trades into it.";}
     else{guardLine.className="";}
+    // data freshness
+    var fe=document.getElementById("dataAge");
+    if(fe&&lastEpoch){
+      var age=Math.max(0,Math.round((Date.now()/1000-lastEpoch)/60));
+      fe.textContent="prices "+(age<1?"just now":age+"m old");
+      fe.className="fresh"+(age>=40?" old":age>=25?" stale":"");
+    }
   }
 
   /* ---------- theme ---------- */
@@ -284,15 +297,15 @@
   function renderTicker(news){
     var el=document.getElementById("ticker");
     var items=[];
-    (news&&news.calendar||[]).slice(0,6).forEach(function(e){
-      items.push('<span class="it"><span class="mk cal">'+esc(e.ccy)+' '+esc(e.impact)+'</span><b>'+esc(e.title)+'</b> · '+esc(e.when_gst)+' GST</span>');
+    (news&&news.calendar||[]).slice(0,5).forEach(function(e){
+      items.push('<span class="it"><span class="mk cal">'+esc(e.ccy)+' '+esc(e.impact)+'</span><b>'+esc(trim(e.title,60))+'</b> · '+esc(e.when_gst)+' GST</span>');
     });
     (news&&news.headlines||[]).forEach(function(h){
-      items.push('<span class="it"><span class="mk new">'+esc(h.market)+'</span>'+esc(trim(h.title,90))+'</span>');
+      items.push('<span class="it"><span class="mk new">'+esc(h.market)+'</span>'+esc(trim(h.title,80))+'</span>');
     });
-    if(!items.length){el.innerHTML='';return;}
-    var seq=items.join("");
-    el.innerHTML='<div class="rail">'+seq+seq+'</div>';
+    if(!items.length){el.innerHTML='<div class="rail"><span class="it" style="padding-left:16px">No fresh headlines right now.</span></div>';return;}
+    var sep='<span class="sep">•</span>';
+    el.innerHTML='<div class="rail">'+items.join(sep)+sep+'</div>';
   }
 
   /* ---------- trade desk ---------- */
@@ -325,10 +338,10 @@
     var rows=watch.concat(forming);
     var rowsHtml=rows.length?'<div class="card" style="margin-top:12px"><div class="pad" style="padding-top:6px;padding-bottom:6px">'+rows.map(function(i){
       return '<div class="idearow"><span class="tier '+i.tier+'">'+i.tier+'</span><span class="m">'+esc(shortName(i.market))+' <span class="dirw '+i.dir+'">'+i.dir+'</span></span>'+
-        '<span class="n">'+esc(i.note)+'</span><span class="cf">'+i.confidence+'%</span></div>';
+        '<span class="n">'+esc(i.note)+'</span><span class="cf" title="conviction score">'+i.confidence+'% conv</span></div>';
     }).join("")+'</div></div>':'';
 
-    var note='<div class="tradenote">The system only flags a trade when it\'s actually there — it will not fill this list to look busy. More than a couple of A+ at once is a signal to tighten up, not pile in.</div>';
+    var note='<div class="tradenote"><b>conv</b> = conviction: how aligned the read is right now (daily+1H trend agreement · momentum/RSI · volatility regime), scored 0–100. It is <b>not</b> a win probability. The system only flags a trade when it\'s actually there — more than a couple of A+ at once is a signal to tighten up, not pile in.</div>';
     return head+banner+liveHtml+rowsHtml+note;
   }
 
@@ -411,6 +424,7 @@
 
   function render(data){
     var app=document.getElementById("app");
+    lastEpoch=data.updated_epoch||null;
     var inst=data.instruments||{},order=data.order||Object.keys(inst);
     var markets=order.filter(function(k){return inst[k];}).map(function(k){return inst[k];});
 
