@@ -2,6 +2,7 @@
   "inst": "eurusd",
   "name": "EUR/USD",
   "parked": false,
+  "macro_only": false,
   "unit": "pips",
   "dp": 5,
   "pip_mult": 10000,
@@ -12,61 +13,66 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.14247,
-    "dist_ema8_pips": 19.3,
+    "ema8": 1.14238,
+    "dist_ema8_pips": 16.2,
     "waiting": "",
     "plan": {
       "dir": "short",
-      "entry": 1.1444,
-      "stop": 1.1537,
-      "target1": 1.1351,
+      "entry": 1.144,
+      "stop": 1.1533,
+      "target1": 1.1347,
       "risk_pips": 93.0,
       "rr": 1.0,
       "then": "trail the rest with the 3xATR chandelier"
     }
   },
   "patterns": [],
-  "updated": "20:21:40",
-  "updated_full": "Thu 09 Jul 2026 20:21 GST",
-  "price": 1.1444,
+  "updated": "20:35:01",
+  "updated_full": "Thu 09 Jul 2026 20:35 GST",
+  "price": 1.144,
+  "bias": "Bearish",
+  "confidence": 57,
+  "confidence_why": "1H is fighting the daily, momentum with the trend, price is at a level",
+  "analysis": "EUR/USD is leaning down on the daily, 57% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (10.0 pips away). A soft dollar (-0.16% DXY) is a headwind to the read.",
+  "watch": "Stand down until a level and a clean trigger line up.",
   "daily": {
-    "ema50": 1.1534,
-    "ema200": 1.15858,
-    "rsi": 45.29199,
+    "ema50": 1.15339,
+    "ema200": 1.15857,
+    "rsi": 44.73276,
     "atr": 0.0062,
     "trend": "BEARISH"
   },
   "h1": {
-    "ema50": 1.14287,
-    "ema200": 1.14269,
-    "rsi": 59.53917,
-    "atr": 0.00089,
+    "ema50": 1.14284,
+    "ema200": 1.14268,
+    "rsi": 57.12024,
+    "atr": 0.00091,
     "trend": "BULLISH"
   },
-  "h1_atr_pips": 8.9,
+  "h1_atr_pips": 9.1,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -6.0
+      "dist_pips": -10.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 44.0
+      "dist_pips": 40.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 94.0
+      "dist_pips": 90.0
     }
   ],
   "nearest": {
     "name": "ceiling",
     "price": 1.145,
-    "dist_pips": -6.0
+    "dist_pips": -10.0
   },
-  "box_pos": 0.94,
+  "box_pos": 0.9,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
@@ -78,7 +84,7 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "Daily bearish, price under the EMAs; choppy. RSI 59.5. Nearest level 1.145 (-6.0 pips). Trigger in play."
+      "read": "Daily bearish, price under the EMAs; choppy. RSI 57.1. Nearest level 1.145 (-10.0 pips). Trigger in play."
     },
     "quant": {
       "status": "hold",
