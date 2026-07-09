@@ -150,6 +150,33 @@
 
   .stack{display:grid;gap:16px}
 
+  /* news + calendar */
+  .newsgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+  .newscard{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .cal{display:grid;gap:2px}
+  .cal .ev{display:grid;grid-template-columns:auto auto 1fr auto;gap:10px;align-items:center;padding:10px 6px;border-top:1px solid var(--line);font-size:12.5px}
+  .cal .ev:first-child{border-top:0}
+  .ccy{font-size:10.5px;font-weight:800;letter-spacing:.04em;padding:3px 7px;border-radius:6px;background:var(--panel-2);color:var(--ink)}
+  .imp{width:7px;height:7px;border-radius:50%}
+  .imp.High{background:var(--bear)} .imp.Medium{background:var(--neutral)}
+  .cal .ev .ttl{color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .cal .ev .ttl small{color:var(--ink-faint);display:block;font-size:11px}
+  .cal .ev .tm{text-align:right;color:var(--ink-soft);white-space:nowrap}
+  .cal .ev .tm b{display:block;color:var(--ink);font-weight:600}
+  .heads{display:grid;gap:0}
+  .head{display:grid;grid-template-columns:auto 1fr;gap:10px;padding:11px 6px;border-top:1px solid var(--line)}
+  .head:first-child{border-top:0}
+  .head .flag{display:flex;flex-direction:column;align-items:center;gap:3px;padding-top:2px}
+  .head .dir{font-size:13px;font-weight:800}
+  .dir.up{color:var(--bull)} .dir.down{color:var(--bear)} .dir.flat{color:var(--ink-faint)}
+  .head .big{font-size:10px}
+  .head a{color:var(--ink);text-decoration:none;font-size:12.5px;line-height:1.4}
+  .head a:hover{color:var(--accent)}
+  .head .meta{font-size:10.5px;color:var(--ink-faint);margin-top:3px}
+  .head .mk{color:var(--accent);font-weight:600}
+  .newsnote{font-size:11px;color:var(--ink-faint);padding:0 16px 14px}
+  .empty{font-size:12.5px;color:var(--ink-faint);padding:16px 6px}
+
   .macro-head{display:flex;align-items:center;justify-content:space-between;margin:26px 2px 12px}
   .macro-head h2{font-size:15px;margin:0;font-weight:700}
   .mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
@@ -322,6 +349,37 @@
       '<p style="font-size:12px;color:var(--ink-faint);margin:12px 2px 0">DXY is EUR/USD\'s mirror — dollar up, euro down. Soft VIX = calm tape, small ranges.</p></div></div>';
   }
 
+  function relAge(pub){
+    var t=Date.parse(pub); if(isNaN(t))return "";
+    var m=Math.round((Date.now()-t)/60000);
+    if(m<60)return m+"m ago"; var h=Math.round(m/60); if(h<24)return h+"h ago";
+    return Math.round(h/24)+"d ago";
+  }
+  function fmtMins(m){var a=Math.abs(m);if(a<60)return (m<0?"":"")+a+"m";var h=Math.floor(a/60),mm=a%60;return h+"h"+(mm?" "+mm+"m":"");}
+  function renderNews(news){
+    if(!news)return "";
+    var cal=news.calendar||[], heads=news.headlines||[];
+    var calHtml=cal.length?cal.map(function(e){
+      var when=e.mins_to<0?"was "+fmtMins(e.mins_to)+" ago":"in "+fmtMins(e.mins_to);
+      var fp=e.forecast?('<small>fc '+esc(e.forecast)+' · prev '+esc(e.previous)+'</small>'):'';
+      return '<div class="ev"><span class="ccy">'+esc(e.ccy)+'</span><span class="imp '+esc(e.impact)+'"></span>'+
+        '<span class="ttl">'+esc(e.title)+fp+'</span><span class="tm"><b>'+esc(e.when_gst)+'</b>'+when+'</span></div>';
+    }).join(""):'<div class="empty">No high-impact events left on the calendar this week. Quiet diary — the guard still watches 16:30 daily.</div>';
+
+    var headHtml=heads.length?heads.map(function(h){
+      var arrow=h.direction==="up"?"↑":h.direction==="down"?"↓":"·";
+      var big=h.strength==="big"?'<span class="big">🔥</span>':'';
+      var link=h.link?('<a href="'+esc(h.link)+'" target="_blank" rel="noopener">'+esc(h.title)+'</a>'):('<span>'+esc(h.title)+'</span>');
+      return '<div class="head"><div class="flag"><span class="dir '+esc(h.direction)+'">'+arrow+'</span>'+big+'</div>'+
+        '<div>'+link+'<div class="meta"><span class="mk">'+esc(h.market)+'</span> · '+esc(relAge(h.pub))+'</div></div></div>';
+    }).join(""):'<div class="empty">Headlines feed is quiet right now.</div>';
+
+    return '<div class="newsgrid">'+
+      '<div class="newscard"><div class="cardhead"><div class="inst"><span class="sym" style="font-size:15px">Next high-impact events</span></div><span class="eyebrow">the diary · GST</span></div><div class="pad"><div class="cal">'+calHtml+'</div></div></div>'+
+      '<div class="newscard"><div class="cardhead"><div class="inst"><span class="sym" style="font-size:15px">Latest headlines</span></div><span class="eyebrow">auto-tagged · sanity-check</span></div><div class="pad" style="padding-top:6px"><div class="heads">'+headHtml+'</div></div><div class="newsnote">↑/↓ and 🔥 are a rough keyword auto-tag, not a real read — glance, don\'t trade off them. '+esc(news.sources||"")+'</div></div>'+
+      '</div>';
+  }
+
   function render(data){
     var app=document.getElementById("app");
     var inst=data.instruments||{}, order=data.order||Object.keys(inst);
@@ -331,6 +389,8 @@
     var html='<div class="grid"><div>'+(hero?renderHero(hero):'')+'</div><div class="stack">'+renderGauges(data.context)+
       '<div class="card"><div class="cardhead"><div class="inst"><span class="sym" style="font-size:15px">Why EUR/USD only</span></div></div><div class="pad"><p style="font-size:12.5px;color:var(--ink-soft);margin:0">One setup, one instrument, one rule. The eight markets below are your <b>macro read</b> — bias, conviction and analysis so you know the weather. They are <b>not</b> trade instruments for you. Discipline is the edge.</p></div></div>'+
       '</div></div>';
+
+    html+=renderNews(data.news);
 
     html+='<div class="macro-head"><h2>Macro desk — '+macros.length+' markets</h2><span class="eyebrow">read-only · bias &amp; analysis</span></div>';
     html+='<div class="mgrid">'+macros.map(renderMacroCard).join("")+'</div>';
