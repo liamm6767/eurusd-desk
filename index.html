@@ -216,7 +216,7 @@
 <body>
 <div class="wrap">
   <div class="topbar">
-    <div class="brand"><b>THE&nbsp;DESK</b><span class="tag">9 markets · one gate · your rules</span></div>
+    <div class="brand"><b>THE&nbsp;DESK</b><span class="tag">9 markets · 8/21/55 on 4H · Daily bias</span></div>
     <div class="topright">
       <div class="fresh" id="dataAge" title="How old the prices are. Clocks & guard are real-time; prices refresh on the board's timer.">—</div>
       <div class="clock"><div class="t mono" id="gstClock">--:--:--</div><div class="z">GST · Dubai</div></div>
@@ -350,7 +350,7 @@
     var U=s.unit,g=s.gate||{};
     var gate=[
       {ok:g.trigger,lbl:"Trigger at a level",note:s.nearest?(s.nearest.name.replace(/_/g," ")+" "+Math.abs(s.nearest.dist_pips)+" "+U):""},
-      {ok:g.direction_aligned,lbl:"Timeframes aligned",note:(s.daily&&s.h1)?("D1 "+s.daily.trend.toLowerCase()+" / H1 "+s.h1.trend.toLowerCase()):""},
+      {ok:g.direction_aligned,lbl:"4H agrees with Daily bias",note:(s.daily&&s.tf4)?("4H "+s.tf4.trend.toLowerCase()+" / Daily "+s.daily.trend.toLowerCase()):""},
       {ok:g.regime_ok,lbl:"Regime running",note:s.regime?s.regime.toLowerCase():""}
     ].map(function(i){return '<div class="item"><span class="mark '+(i.ok?"yes":"no")+'">'+(i.ok?"✓":"✕")+'</span><span>'+esc(i.lbl)+'</span><span class="note">'+esc(i.note)+'</span></div>';}).join("");
 
