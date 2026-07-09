@@ -346,7 +346,19 @@
   }
 
   /* ---------- macro card detail (expandable) ---------- */
+  function goldDetail(s){
+    var st=s.strategy,U=s.unit,p=st.plan;
+    var planHtml=p?('<div class="plan2"><div class="c"><div class="k">Dir</div><div class="v '+(p.dir==="long"?"bull":"bear")+'">'+esc(p.dir)+'</div></div><div class="c"><div class="k">Entry</div><div class="v mono">'+p.entry+'</div></div><div class="c"><div class="k">Stop</div><div class="v mono bear">'+p.stop+'</div></div><div class="c"><div class="k">Trail</div><div class="v">'+esc(p.trail)+'</div></div></div>'):'';
+    return '<div class="section-label">'+esc(st.name)+'</div>'+
+      '<div class="gate"><div class="item"><span class="mark '+(st.trend!=="MIXED"?"yes":"no")+'">'+(st.trend!=="MIXED"?"✓":"✕")+'</span><span>Tide — daily 200-EMA</span><span class="note">'+esc(st.trend.toLowerCase())+'</span></div>'+
+      '<div class="item"><span class="mark '+(st.live?"yes":"no")+'">'+(st.live?"✓":"✕")+'</span><span>Re-fire — MACD cross</span><span class="note">'+(st.live?"LIVE":"waiting")+'</span></div></div>'+
+      planHtml+
+      '<p style="font-size:12.5px;color:var(--ink-soft);margin:6px 0 10px">'+esc(st.signal)+'</p>'+
+      '<p style="font-size:11.5px;color:var(--ink-faint);margin:0 0 12px">Daily ATR '+st.atr_daily+' '+U+' · stop 1.5×ATR · trail 3×ATR. Reps on 8H/4H/1H — small until proven.</p>'+
+      (TV[s.inst]?'<a class="btn" href="https://www.tradingview.com/symbols/'+TV[s.inst]+'/" target="_blank" rel="noopener">Open chart on TradingView ↗</a>':'');
+  }
   function renderDetail(s){
+    if(s.strategy) return goldDetail(s);
     var U=s.unit,g=s.gate||{};
     var gate=[
       {ok:g.trigger,lbl:"Trigger at a level",note:s.nearest?(s.nearest.name.replace(/_/g," ")+" "+Math.abs(s.nearest.dist_pips)+" "+U):""},
