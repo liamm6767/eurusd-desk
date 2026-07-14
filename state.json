@@ -13,68 +13,93 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.14032,
-    "dist_ema8_pips": 0.8,
-    "waiting": "",
-    "plan": {
-      "dir": "short",
-      "entry": 1.1404,
-      "stop": 1.14328,
-      "target1": 1.13752,
-      "risk_pips": 28.8,
-      "rr": 1.0,
-      "then": "trail the rest with the 3xATR chandelier"
-    }
+    "ema8": 1.14056,
+    "dist_ema8_pips": 3.4,
+    "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
+    "plan": null
   },
-  "patterns": [],
+  "patterns": [
+    {
+      "name": "Doji",
+      "dir": "neutral",
+      "tier": "watch",
+      "at_level": true,
+      "with_trend": false,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    },
+    {
+      "name": "Hammer / bullish pin",
+      "dir": "bullish",
+      "tier": "watch",
+      "at_level": true,
+      "with_trend": false,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    },
+    {
+      "name": "Shooting star / bearish pin",
+      "dir": "bearish",
+      "tier": "act",
+      "at_level": true,
+      "with_trend": true,
+      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+    },
+    {
+      "name": "Inside bar",
+      "dir": "neutral",
+      "tier": "watch",
+      "at_level": true,
+      "with_trend": false,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    }
+  ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "15:42:16",
-  "updated_full": "Tue 14 Jul 2026 15:42 GST",
-  "price": 1.1404,
+  "updated": "16:02:51",
+  "updated_full": "Tue 14 Jul 2026 16:02 GST",
+  "price": 1.1409,
   "bias": "Bearish",
   "confidence": 73,
   "confidence_why": "4H and Daily agree, price is at a level",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 73% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (4.0 pips away). A soft dollar (-0.16% DXY) is a headwind to the read.",
-  "watch": "SETUP LIVE \u2014 short at 1.1404, stop 1.14328, target 1.13752. Wait for the candle to close.",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 73% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (9.0 pips away). A soft dollar (-0.23% DXY) is a headwind to the read.",
+  "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.14032,
-    "ema21": 1.14134,
-    "ema55": 1.1421,
-    "rsi": 45.55956,
-    "atr": 0.00192,
+    "ema8": 1.14056,
+    "ema21": 1.14135,
+    "ema55": 1.14208,
+    "rsi": 47.47037,
+    "atr": 0.00181,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.14154,
-    "ema21": 1.14459,
-    "ema55": 1.15287,
+    "ema8": 1.14166,
+    "ema21": 1.14464,
+    "ema55": 1.15289,
     "trend": "BEARISH"
   },
-  "atr_pips": 19.2,
+  "atr_pips": 18.1,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -46.0
+      "dist_pips": -41.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 4.0
+      "dist_pips": 9.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 54.0
+      "dist_pips": 59.0
     }
   ],
   "nearest": {
     "name": "floor",
     "price": 1.14,
-    "dist_pips": 4.0
+    "dist_pips": 9.0
   },
-  "box_pos": 0.54,
+  "box_pos": 0.59,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
@@ -86,11 +111,11 @@
   "desks": {
     "chartist": {
       "status": "go",
-      "read": "4H bearish (8/21/55 stack), price above the 8-EMA; choppy. RSI 45.6. Daily bias agrees. Nearest level 1.14 (4.0 pips). Trigger in play."
+      "read": "4H bearish (8/21/55 stack), price above the 8-EMA; choppy. RSI 47.5. Daily bias agrees. Nearest level 1.14 (9.0 pips). Trigger in play."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility dead/coiling (4H ATR ~19 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility dead/coiling (4H ATR ~18 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
