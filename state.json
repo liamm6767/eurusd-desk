@@ -13,8 +13,8 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.14158,
-    "dist_ema8_pips": 39.2,
+    "ema8": 1.14135,
+    "dist_ema8_pips": 30.5,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
@@ -30,26 +30,26 @@
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "19:09:46",
-  "updated_full": "Tue 14 Jul 2026 19:09 GST",
-  "price": 1.1455,
+  "updated": "19:30:34",
+  "updated_full": "Tue 14 Jul 2026 19:30 GST",
+  "price": 1.1444,
   "bias": "Bearish",
-  "confidence": 75,
-  "confidence_why": "4H and Daily agree, momentum against it, volatility is expanding, price is at a level",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 75% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (5.0 pips away). A soft dollar (-0.53% DXY) is a headwind to the read.",
+  "confidence": 63,
+  "confidence_why": "4H and Daily agree, momentum against it, price is at a level",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 63% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (6.0 pips away). A soft dollar (-0.53% DXY) is a headwind to the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.14158,
-    "ema21": 1.14177,
-    "ema55": 1.14224,
-    "rsi": 60.47656,
+    "ema8": 1.14135,
+    "ema21": 1.14167,
+    "ema55": 1.1422,
+    "rsi": 58.09102,
     "atr": 0.00219,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.14267,
-    "ema21": 1.14505,
-    "ema55": 1.15305,
+    "ema8": 1.14244,
+    "ema21": 1.14496,
+    "ema55": 1.15301,
     "trend": "BEARISH"
   },
   "atr_pips": 21.9,
@@ -57,49 +57,49 @@
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": 5.0
+      "dist_pips": -6.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 55.0
+      "dist_pips": 44.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 105.0
+      "dist_pips": 94.0
     }
   ],
   "nearest": {
     "name": "ceiling",
     "price": 1.145,
-    "dist_pips": 5.0
+    "dist_pips": -6.0
   },
-  "box_pos": 1.05,
-  "regime": "RUNNING",
+  "box_pos": 0.94,
+  "regime": "CHOPPY",
   "gate": {
-    "open": true,
+    "open": false,
     "trigger": true,
     "direction_aligned": true,
-    "regime_ok": true
+    "regime_ok": false
   },
-  "verdict": "TRADE SETUP",
+  "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
       "status": "go",
-      "read": "4H bearish (8/21/55 stack), price above the 8-EMA; running. RSI 60.5. Daily bias agrees. Nearest level 1.145 (5.0 pips). Trigger in play."
+      "read": "4H bearish (8/21/55 stack), price above the 8-EMA; choppy. RSI 58.1. Daily bias agrees. Nearest level 1.145 (-6.0 pips). Trigger in play."
     },
     "quant": {
-      "status": "go",
-      "read": "Volatility expanding (4H ATR ~22 pips). Edge worth measuring."
+      "status": "hold",
+      "read": "Volatility dead/coiling (4H ATR ~22 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
-      "status": "hold",
-      "read": "Gate OPEN \u2014 a setup fits. Ready to size at 1%."
+      "status": "go",
+      "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
     },
     "trade": {
-      "status": "go",
-      "read": "Entry plan live."
+      "status": "idle",
+      "read": "On standby until a level and a clean trigger appear together."
     }
   },
   "source": "Yahoo EURUSD=X (free feed; ~1-2 pips off OANDA)"
