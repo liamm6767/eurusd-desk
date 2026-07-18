@@ -1,8 +1,9 @@
 {
-  "updated_full": "Sat 18 Jul 2026 03:18 GST",
-  "updated_epoch": 1784330287,
+  "updated_full": "Sat 18 Jul 2026 05:47 GST",
+  "updated_epoch": 1784339223,
   "order": [
     "eurusd",
+    "gold",
     "gbpusd",
     "usdjpy",
     "eurjpy",
@@ -44,8 +45,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "03:01:53",
-      "updated_full": "Sat 18 Jul 2026 03:01 GST",
+      "updated": "05:46:43",
+      "updated_full": "Sat 18 Jul 2026 05:46 GST",
       "price": 1.1446,
       "bias": "Bullish",
       "confidence": 45,
@@ -118,6 +119,128 @@
       },
       "source": "Yahoo EURUSD=X (free feed; ~1-2 pips off OANDA)"
     },
+    "gold": {
+      "inst": "gold",
+      "name": "Gold \u00b7 XAU/USD",
+      "parked": false,
+      "macro_only": false,
+      "unit": "pts",
+      "dp": 2,
+      "pip_mult": 1,
+      "pip_value": 1.0,
+      "box": [
+        4000.0,
+        4300.0
+      ],
+      "setup": {
+        "trend": "down",
+        "ema8": 4015.14,
+        "dist_ema8_pips": 7.9,
+        "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
+        "plan": null
+      },
+      "patterns": [
+        {
+          "name": "Hammer / bullish pin",
+          "dir": "bullish",
+          "tier": "noise",
+          "at_level": false,
+          "with_trend": false,
+          "note": "A pattern with no level is just a candle. Ignore it."
+        },
+        {
+          "name": "Inside bar",
+          "dir": "neutral",
+          "tier": "noise",
+          "at_level": false,
+          "with_trend": false,
+          "note": "A pattern with no level is just a candle. Ignore it."
+        }
+      ],
+      "strategy": {
+        "name": "Trend + Re-Fire (Daily \u00b7 proven 25yr)",
+        "trend": "BEARISH",
+        "macd_hist": 6.897,
+        "live": false,
+        "signal": "Downtrend (below the 200-EMA) but momentum is up \u2014 wait for the MACD to cross back down.",
+        "plan": null,
+        "atr_daily": 83.74
+      },
+      "timeframe": "Daily \u00b7 Trend + Re-Fire",
+      "updated": "05:46:45",
+      "updated_full": "Sat 18 Jul 2026 05:46 GST",
+      "price": 4023.0,
+      "bias": "Bearish",
+      "confidence": 62,
+      "confidence_why": "daily 200-EMA down, waiting for the cross",
+      "analysis": "Gold \u00b7 XAU/USD is below the 200-EMA on the daily \u2014 the tide. Downtrend (below the 200-EMA) but momentum is up \u2014 wait for the MACD to cross back down. ~126 pts at risk.",
+      "watch": "Downtrend (below the 200-EMA) but momentum is up \u2014 wait for the MACD to cross back down.",
+      "tf4": {
+        "ema8": 4015.14,
+        "ema21": 4027.61,
+        "ema55": 4058.21,
+        "rsi": 46.29,
+        "atr": 31.63,
+        "trend": "BEARISH"
+      },
+      "daily": {
+        "ema8": 4045.64,
+        "ema21": 4111.94,
+        "ema55": 4293.83,
+        "trend": "BEARISH"
+      },
+      "atr_pips": 31.6,
+      "levels": [
+        {
+          "name": "ceiling",
+          "price": 4300.0,
+          "dist_pips": -277.0
+        },
+        {
+          "name": "floor",
+          "price": 4100.0,
+          "dist_pips": -77.0
+        },
+        {
+          "name": "hard_floor",
+          "price": 4000.0,
+          "dist_pips": 23.0
+        }
+      ],
+      "nearest": {
+        "name": "hard_floor",
+        "price": 4000.0,
+        "dist_pips": 23.0
+      },
+      "box_pos": 0.077,
+      "regime": "CHOPPY",
+      "gate": {
+        "open": false,
+        "trigger": false,
+        "direction_aligned": true,
+        "regime_ok": false
+      },
+      "verdict": "NO TRADE \u2014 PATIENCE",
+      "desks": {
+        "chartist": {
+          "status": "hold",
+          "read": "4H bearish (8/21/55 stack), price above the 8-EMA; choppy. RSI 46.3. Daily bias agrees. Nearest level 4000.0 (23.0 pts). No trigger at a level yet."
+        },
+        "quant": {
+          "status": "hold",
+          "read": "Volatility dead/coiling (4H ATR ~32 pts). No edge in a low-vol mid-range \u2014 size would be minimum."
+        },
+        "risk": {
+          "status": "go",
+          "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
+        },
+        "trade": {
+          "status": "idle",
+          "read": "On standby until a level and a clean trigger appear together."
+        }
+      },
+      "source": "Yahoo GC=F (COMEX gold futures)"
+    },
     "gbpusd": {
       "inst": "gbpusd",
       "name": "GBP/USD",
@@ -150,8 +273,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "03:17:36",
-      "updated_full": "Sat 18 Jul 2026 03:17 GST",
+      "updated": "05:46:47",
+      "updated_full": "Sat 18 Jul 2026 05:46 GST",
       "price": 1.3452,
       "bias": "Bullish",
       "confidence": 51,
@@ -256,8 +379,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "03:17:40",
-      "updated_full": "Sat 18 Jul 2026 03:17 GST",
+      "updated": "05:46:49",
+      "updated_full": "Sat 18 Jul 2026 05:46 GST",
       "price": 162.353,
       "bias": "Bullish",
       "confidence": 67,
@@ -370,8 +493,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "03:17:44",
-      "updated_full": "Sat 18 Jul 2026 03:17 GST",
+      "updated": "05:46:51",
+      "updated_full": "Sat 18 Jul 2026 05:46 GST",
       "price": 185.762,
       "bias": "Bullish",
       "confidence": 77,
@@ -484,8 +607,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "03:17:48",
-      "updated_full": "Sat 18 Jul 2026 03:17 GST",
+      "updated": "05:46:54",
+      "updated_full": "Sat 18 Jul 2026 05:46 GST",
       "price": 0.8069,
       "bias": "Bearish",
       "confidence": 39,
@@ -581,8 +704,8 @@
       "patterns": [],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "03:17:53",
-      "updated_full": "Sat 18 Jul 2026 03:17 GST",
+      "updated": "05:46:56",
+      "updated_full": "Sat 18 Jul 2026 05:46 GST",
       "price": 1.4018,
       "bias": "Bearish",
       "confidence": 66,
@@ -687,8 +810,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "03:17:57",
-      "updated_full": "Sat 18 Jul 2026 03:17 GST",
+      "updated": "05:46:58",
+      "updated_full": "Sat 18 Jul 2026 05:46 GST",
       "price": 0.6985,
       "bias": "Bullish",
       "confidence": 51,
@@ -793,8 +916,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "03:18:00",
-      "updated_full": "Sat 18 Jul 2026 03:18 GST",
+      "updated": "05:47:00",
+      "updated_full": "Sat 18 Jul 2026 05:47 GST",
       "price": 81.77,
       "bias": "Bullish",
       "confidence": 66,
@@ -919,6 +1042,18 @@
       "note": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree."
     },
     {
+      "key": "gold",
+      "market": "Gold \u00b7 XAU/USD",
+      "unit": "pts",
+      "confidence": 62,
+      "bias": "Bearish",
+      "provisional": false,
+      "method": "Trend + Re-Fire",
+      "tier": "forming",
+      "dir": "short",
+      "note": "Downtrend (below the 200-EMA) but momentum is up \u2014 wait for the MACD to cross back down."
+    },
+    {
       "key": "gbpusd",
       "market": "GBP/USD",
       "unit": "pips",
@@ -964,7 +1099,7 @@
     }
   ],
   "context": {
-    "updated_full": "Sat 18 Jul 2026 03:01 GST",
+    "updated_full": "Sat 18 Jul 2026 05:46 GST",
     "gauges": {
       "dxy": {
         "name": "US Dollar Index (DXY)",
@@ -1088,7 +1223,7 @@
         "market": "USD/JPY"
       }
     ],
-    "updated_full": "Sat 18 Jul 2026 03:18 GST",
+    "updated_full": "Sat 18 Jul 2026 05:47 GST",
     "sources": "ForexFactory calendar \u00b7 Yahoo Finance headlines (free feeds)"
   }
 }
