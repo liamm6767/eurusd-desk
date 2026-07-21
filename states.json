@@ -1,6 +1,6 @@
 {
-  "updated_full": "Tue 21 Jul 2026 13:41 GST",
-  "updated_epoch": 1784626878,
+  "updated_full": "Tue 21 Jul 2026 14:02 GST",
+  "updated_epoch": 1784628131,
   "order": [
     "eurusd",
     "gold",
@@ -9,7 +9,6 @@
     "eurjpy",
     "usdchf",
     "usdcad",
-    "audusd",
     "wti"
   ],
   "instruments": {
@@ -27,35 +26,44 @@
         1.145
       ],
       "setup": {
-        "trend": "mixed",
-        "ema8": 1.14265,
-        "dist_ema8_pips": 2.5,
-        "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
+        "trend": "down",
+        "ema8": 1.14259,
+        "dist_ema8_pips": 0.1,
+        "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
         "plan": null
       },
-      "patterns": [],
+      "patterns": [
+        {
+          "name": "Doji",
+          "dir": "neutral",
+          "tier": "noise",
+          "at_level": false,
+          "with_trend": false,
+          "note": "A pattern with no level is just a candle. Ignore it."
+        }
+      ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "13:40:48",
-      "updated_full": "Tue 21 Jul 2026 13:40 GST",
-      "price": 1.1429,
-      "bias": "Neutral",
-      "confidence": 48,
-      "confidence_why": "the 4H EMAs are tangled \u2014 no clean trend",
-      "analysis": "EUR/USD is going sideways on the 4-hour, 48% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (21.0 pips away). Dollar soft today (-0.05% DXY).",
-      "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
+      "updated": "14:01:31",
+      "updated_full": "Tue 21 Jul 2026 14:01 GST",
+      "price": 1.1426,
+      "bias": "Bearish",
+      "confidence": 67,
+      "confidence_why": "4H and Daily agree",
+      "analysis": "EUR/USD is leaning down on the 4-hour, 67% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (24.0 pips away). A soft dollar (-0.08% DXY) is a headwind to the read.",
+      "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
       "tf4": {
-        "ema8": 1.14265,
-        "ema21": 1.14326,
-        "ema55": 1.14325,
-        "rsi": 47.84548,
+        "ema8": 1.14259,
+        "ema21": 1.14324,
+        "ema55": 1.14324,
+        "rsi": 46.64896,
         "atr": 0.00155,
-        "trend": "MIXED"
+        "trend": "BEARISH"
       },
       "daily": {
-        "ema8": 1.14296,
-        "ema21": 1.1442,
-        "ema55": 1.15132,
+        "ema8": 1.14291,
+        "ema21": 1.14417,
+        "ema55": 1.15131,
         "trend": "BEARISH"
       },
       "atr_pips": 15.5,
@@ -63,37 +71,37 @@
         {
           "name": "ceiling",
           "price": 1.145,
-          "dist_pips": -21.0
+          "dist_pips": -24.0
         },
         {
           "name": "floor",
           "price": 1.14,
-          "dist_pips": 29.0
+          "dist_pips": 26.0
         },
         {
           "name": "hard_floor",
           "price": 1.135,
-          "dist_pips": 79.0
+          "dist_pips": 76.0
         }
       ],
       "nearest": {
         "name": "ceiling",
         "price": 1.145,
-        "dist_pips": -21.0
+        "dist_pips": -24.0
       },
-      "box_pos": 0.79,
+      "box_pos": 0.76,
       "regime": "CHOPPY",
       "gate": {
         "open": false,
         "trigger": false,
-        "direction_aligned": false,
+        "direction_aligned": true,
         "regime_ok": false
       },
       "verdict": "NO TRADE \u2014 PATIENCE",
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 47.8. Daily bias flat. Nearest level 1.145 (-21.0 pips). No trigger at a level yet."
+          "read": "4H bearish (8/21/55 stack), price above the 8-EMA; choppy. RSI 46.6. Daily bias agrees. Nearest level 1.145 (-24.0 pips). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -125,8 +133,8 @@
       ],
       "setup": {
         "trend": "mixed",
-        "ema8": 4042.7,
-        "dist_ema8_pips": 25.1,
+        "ema8": 4043.23,
+        "dist_ema8_pips": 27.0,
         "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
         "plan": null
       },
@@ -143,33 +151,33 @@
       "strategy": {
         "name": "Trend + Re-Fire (Daily \u00b7 proven 25yr)",
         "trend": "BEARISH",
-        "macd_hist": 10.532,
+        "macd_hist": 10.768,
         "live": false,
         "signal": "Downtrend (below the 200-EMA) but momentum is up \u2014 wait for the MACD to cross back down.",
         "plan": null,
         "atr_daily": 78.56
       },
       "timeframe": "Daily \u00b7 Trend + Re-Fire",
-      "updated": "13:40:50",
-      "updated_full": "Tue 21 Jul 2026 13:40 GST",
-      "price": 4067.8,
+      "updated": "14:01:36",
+      "updated_full": "Tue 21 Jul 2026 14:01 GST",
+      "price": 4070.2,
       "bias": "Bearish",
       "confidence": 62,
       "confidence_why": "daily 200-EMA down, waiting for the cross",
       "analysis": "Gold \u00b7 XAU/USD is below the 200-EMA on the daily \u2014 the tide. Downtrend (below the 200-EMA) but momentum is up \u2014 wait for the MACD to cross back down. ~118 pts at risk.",
       "watch": "Downtrend (below the 200-EMA) but momentum is up \u2014 wait for the MACD to cross back down.",
       "tf4": {
-        "ema8": 4042.7,
-        "ema21": 4033.04,
-        "ema55": 4050.56,
-        "rsi": 59.35,
+        "ema8": 4043.23,
+        "ema21": 4033.26,
+        "ema55": 4050.64,
+        "rsi": 60.1,
         "atr": 29.86,
         "trend": "MIXED"
       },
       "daily": {
-        "ema8": 4043.07,
-        "ema21": 4098.75,
-        "ema55": 4275.65,
+        "ema8": 4043.89,
+        "ema21": 4099.09,
+        "ema55": 4275.78,
         "trend": "BEARISH"
       },
       "atr_pips": 29.9,
@@ -177,25 +185,25 @@
         {
           "name": "ceiling",
           "price": 4300.0,
-          "dist_pips": -232.2
+          "dist_pips": -229.8
         },
         {
           "name": "floor",
           "price": 4100.0,
-          "dist_pips": -32.2
+          "dist_pips": -29.8
         },
         {
           "name": "hard_floor",
           "price": 4000.0,
-          "dist_pips": 67.8
+          "dist_pips": 70.2
         }
       ],
       "nearest": {
         "name": "floor",
         "price": 4100.0,
-        "dist_pips": -32.2
+        "dist_pips": -29.8
       },
-      "box_pos": 0.226,
+      "box_pos": 0.234,
       "regime": "CHOPPY",
       "gate": {
         "open": false,
@@ -207,7 +215,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 59.3. Daily bias flat. Nearest level 4100.0 (-32.2 pts). No trigger at a level yet."
+          "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 60.1. Daily bias flat. Nearest level 4100.0 (-29.8 pts). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -239,8 +247,8 @@
       ],
       "setup": {
         "trend": "mixed",
-        "ema8": 1.34402,
-        "dist_ema8_pips": -9.2,
+        "ema8": 1.34394,
+        "dist_ema8_pips": -12.4,
         "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
         "plan": null
       },
@@ -264,52 +272,52 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "13:40:53",
-      "updated_full": "Tue 21 Jul 2026 13:40 GST",
-      "price": 1.3431,
+      "updated": "14:01:40",
+      "updated_full": "Tue 21 Jul 2026 14:01 GST",
+      "price": 1.3427,
       "bias": "Neutral",
       "confidence": 42,
       "confidence_why": "the 4H EMAs are tangled \u2014 no clean trend",
-      "analysis": "GBP/USD is going sideways on the 4-hour, 42% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (69.0 pips away). Dollar soft today (-0.05% DXY).",
+      "analysis": "GBP/USD is going sideways on the 4-hour, 42% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (73.0 pips away). Dollar soft today (-0.08% DXY).",
       "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down. (levels provisional \u2014 confirm on the chart)",
       "tf4": {
-        "ema8": 1.34402,
-        "ema21": 1.34466,
-        "ema55": 1.34245,
-        "rsi": 45.8639,
-        "atr": 0.00232,
+        "ema8": 1.34394,
+        "ema21": 1.34463,
+        "ema55": 1.34244,
+        "rsi": 45.07513,
+        "atr": 0.00233,
         "trend": "MIXED"
       },
       "daily": {
-        "ema8": 1.34281,
-        "ema21": 1.3384,
-        "ema55": 1.33863,
+        "ema8": 1.34274,
+        "ema21": 1.33837,
+        "ema55": 1.33862,
         "trend": "MIXED"
       },
-      "atr_pips": 23.2,
+      "atr_pips": 23.3,
       "levels": [
         {
           "name": "ceiling",
           "price": 1.35,
-          "dist_pips": -69.0
+          "dist_pips": -73.0
         },
         {
           "name": "floor",
           "price": 1.33,
-          "dist_pips": 131.0
+          "dist_pips": 127.0
         },
         {
           "name": "hard_floor",
           "price": 1.32,
-          "dist_pips": 231.0
+          "dist_pips": 227.0
         }
       ],
       "nearest": {
         "name": "ceiling",
         "price": 1.35,
-        "dist_pips": -69.0
+        "dist_pips": -73.0
       },
-      "box_pos": 0.77,
+      "box_pos": 0.757,
       "regime": "CHOPPY",
       "gate": {
         "open": false,
@@ -321,7 +329,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H mixed (8/21/55 stack), price under the 8-EMA; choppy. RSI 45.9. Daily bias flat. Nearest level 1.35 (-69.0 pips). No trigger at a level yet."
+          "read": "4H mixed (8/21/55 stack), price under the 8-EMA; choppy. RSI 45.1. Daily bias flat. Nearest level 1.35 (-73.0 pips). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -353,33 +361,33 @@
       ],
       "setup": {
         "trend": "up",
-        "ema8": 162.525,
-        "dist_ema8_pips": 14.1,
+        "ema8": 162.527,
+        "dist_ema8_pips": 14.8,
         "waiting": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long.",
         "plan": null
       },
       "patterns": [],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "13:40:56",
-      "updated_full": "Tue 21 Jul 2026 13:40 GST",
-      "price": 162.666,
+      "updated": "14:01:45",
+      "updated_full": "Tue 21 Jul 2026 14:01 GST",
+      "price": 162.675,
       "bias": "Bullish",
       "confidence": 77,
       "confidence_why": "4H and Daily agree, momentum with the trend",
-      "analysis": "USD/JPY is pushing up on the 4-hour, 77% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (233.4 pips away). A soft dollar (-0.05% DXY) is a headwind to the read.",
+      "analysis": "USD/JPY is pushing up on the 4-hour, 77% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (232.5 pips away). A soft dollar (-0.08% DXY) is a headwind to the read.",
       "watch": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long. (levels provisional \u2014 confirm on the chart)",
       "tf4": {
-        "ema8": 162.525,
-        "ema21": 162.42,
-        "ema55": 162.261,
-        "rsi": 62.95,
+        "ema8": 162.527,
+        "ema21": 162.421,
+        "ema55": 162.262,
+        "rsi": 63.234,
         "atr": 0.199,
         "trend": "BULLISH"
       },
       "daily": {
-        "ema8": 162.356,
-        "ema21": 161.934,
+        "ema8": 162.357,
+        "ema21": 161.935,
         "ema55": 160.786,
         "trend": "BULLISH"
       },
@@ -388,25 +396,25 @@
         {
           "name": "ceiling",
           "price": 165.0,
-          "dist_pips": -233.4
+          "dist_pips": -232.5
         },
         {
           "name": "floor",
           "price": 160.0,
-          "dist_pips": 266.6
+          "dist_pips": 267.5
         },
         {
           "name": "hard_floor",
           "price": 158.0,
-          "dist_pips": 466.6
+          "dist_pips": 467.5
         }
       ],
       "nearest": {
         "name": "ceiling",
         "price": 165.0,
-        "dist_pips": -233.4
+        "dist_pips": -232.5
       },
-      "box_pos": 0.667,
+      "box_pos": 0.668,
       "regime": "CHOPPY",
       "gate": {
         "open": false,
@@ -418,7 +426,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 63.0. Daily bias agrees. Nearest level 165.0 (-233.4 pips). No trigger at a level yet."
+          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 63.2. Daily bias agrees. Nearest level 165.0 (-232.5 pips). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -450,34 +458,34 @@
       ],
       "setup": {
         "trend": "up",
-        "ema8": 185.653,
-        "dist_ema8_pips": 17.7,
+        "ema8": 185.65,
+        "dist_ema8_pips": 16.5,
         "waiting": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long.",
         "plan": null
       },
       "patterns": [],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "13:40:59",
-      "updated_full": "Tue 21 Jul 2026 13:40 GST",
-      "price": 185.83,
+      "updated": "14:01:50",
+      "updated_full": "Tue 21 Jul 2026 14:01 GST",
+      "price": 185.815,
       "bias": "Bullish",
       "confidence": 77,
       "confidence_why": "4H and Daily agree, momentum with the trend",
-      "analysis": "EUR/JPY is pushing up on the 4-hour, 77% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (183.0 pips away). A soft dollar (-0.05% DXY) is a tailwind for the read.",
+      "analysis": "EUR/JPY is pushing up on the 4-hour, 77% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (181.5 pips away). A soft dollar (-0.08% DXY) is a tailwind for the read.",
       "watch": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long. (levels provisional \u2014 confirm on the chart)",
       "tf4": {
-        "ema8": 185.653,
-        "ema21": 185.634,
+        "ema8": 185.65,
+        "ema21": 185.633,
         "ema55": 185.45,
-        "rsi": 58.267,
+        "rsi": 57.834,
         "atr": 0.24,
         "trend": "BULLISH"
       },
       "daily": {
-        "ema8": 185.54,
-        "ema21": 185.26,
-        "ema55": 185.081,
+        "ema8": 185.537,
+        "ema21": 185.259,
+        "ema55": 185.08,
         "trend": "BULLISH"
       },
       "atr_pips": 24.0,
@@ -485,25 +493,25 @@
         {
           "name": "ceiling",
           "price": 188.0,
-          "dist_pips": -217.0
+          "dist_pips": -218.5
         },
         {
           "name": "floor",
           "price": 184.0,
-          "dist_pips": 183.0
+          "dist_pips": 181.5
         },
         {
           "name": "hard_floor",
           "price": 182.0,
-          "dist_pips": 383.0
+          "dist_pips": 381.5
         }
       ],
       "nearest": {
         "name": "floor",
         "price": 184.0,
-        "dist_pips": 183.0
+        "dist_pips": 181.5
       },
-      "box_pos": 0.638,
+      "box_pos": 0.636,
       "regime": "CHOPPY",
       "gate": {
         "open": false,
@@ -515,7 +523,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 58.3. Daily bias agrees. Nearest level 184.0 (183.0 pips). No trigger at a level yet."
+          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 57.8. Daily bias agrees. Nearest level 184.0 (181.5 pips). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -547,33 +555,42 @@
       ],
       "setup": {
         "trend": "up",
-        "ema8": 0.80948,
-        "dist_ema8_pips": 5.2,
+        "ema8": 0.80944,
+        "dist_ema8_pips": 3.6,
         "waiting": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long.",
         "plan": null
       },
-      "patterns": [],
+      "patterns": [
+        {
+          "name": "Doji",
+          "dir": "neutral",
+          "tier": "noise",
+          "at_level": false,
+          "with_trend": false,
+          "note": "A pattern with no level is just a candle. Ignore it."
+        }
+      ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "13:41:03",
-      "updated_full": "Tue 21 Jul 2026 13:41 GST",
-      "price": 0.81,
+      "updated": "14:01:54",
+      "updated_full": "Tue 21 Jul 2026 14:01 GST",
+      "price": 0.8098,
       "bias": "Bullish",
       "confidence": 77,
       "confidence_why": "4H and Daily agree, momentum with the trend",
-      "analysis": "USD/CHF is pushing up on the 4-hour, 77% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (100.0 pips away). A soft dollar (-0.05% DXY) is a headwind to the read.",
+      "analysis": "USD/CHF is pushing up on the 4-hour, 77% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (98.0 pips away). A soft dollar (-0.08% DXY) is a headwind to the read.",
       "watch": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long. (levels provisional \u2014 confirm on the chart)",
       "tf4": {
-        "ema8": 0.80948,
-        "ema21": 0.80874,
-        "ema55": 0.80829,
-        "rsi": 56.02916,
+        "ema8": 0.80944,
+        "ema21": 0.80873,
+        "ema55": 0.80828,
+        "rsi": 55.30213,
         "atr": 0.0018,
         "trend": "BULLISH"
       },
       "daily": {
-        "ema8": 0.8086,
-        "ema21": 0.80655,
+        "ema8": 0.80856,
+        "ema21": 0.80653,
         "ema55": 0.79972,
         "trend": "BULLISH"
       },
@@ -582,25 +599,25 @@
         {
           "name": "ceiling",
           "price": 0.82,
-          "dist_pips": -100.0
+          "dist_pips": -102.0
         },
         {
           "name": "floor",
           "price": 0.8,
-          "dist_pips": 100.0
+          "dist_pips": 98.0
         },
         {
           "name": "hard_floor",
           "price": 0.79,
-          "dist_pips": 200.0
+          "dist_pips": 198.0
         }
       ],
       "nearest": {
-        "name": "ceiling",
-        "price": 0.82,
-        "dist_pips": -100.0
+        "name": "floor",
+        "price": 0.8,
+        "dist_pips": 98.0
       },
-      "box_pos": 0.667,
+      "box_pos": 0.66,
       "regime": "CHOPPY",
       "gate": {
         "open": false,
@@ -612,7 +629,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 56.0. Daily bias agrees. Nearest level 0.82 (-100.0 pips). No trigger at a level yet."
+          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 55.3. Daily bias agrees. Nearest level 0.8 (98.0 pips). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -644,60 +661,60 @@
       ],
       "setup": {
         "trend": "mixed",
-        "ema8": 1.40555,
-        "dist_ema8_pips": 2.5,
+        "ema8": 1.40552,
+        "dist_ema8_pips": 0.8,
         "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
         "plan": null
       },
       "patterns": [],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "13:41:07",
-      "updated_full": "Tue 21 Jul 2026 13:41 GST",
-      "price": 1.4058,
+      "updated": "14:01:59",
+      "updated_full": "Tue 21 Jul 2026 14:01 GST",
+      "price": 1.4056,
       "bias": "Neutral",
       "confidence": 42,
       "confidence_why": "the 4H EMAs are tangled \u2014 no clean trend",
-      "analysis": "USD/CAD is going sideways on the 4-hour, 42% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (42.0 pips away). Dollar soft today (-0.05% DXY).",
+      "analysis": "USD/CAD is going sideways on the 4-hour, 42% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (44.0 pips away). Dollar soft today (-0.08% DXY).",
       "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down. (levels provisional \u2014 confirm on the chart)",
       "tf4": {
-        "ema8": 1.40555,
-        "ema21": 1.40506,
-        "ema55": 1.40828,
-        "rsi": 51.0914,
-        "atr": 0.0023,
+        "ema8": 1.40552,
+        "ema21": 1.40505,
+        "ema55": 1.40827,
+        "rsi": 50.51156,
+        "atr": 0.00231,
         "trend": "MIXED"
       },
       "daily": {
-        "ema8": 1.40784,
-        "ema21": 1.40988,
+        "ema8": 1.4078,
+        "ema21": 1.40986,
         "ema55": 1.40032,
         "trend": "MIXED"
       },
-      "atr_pips": 23.0,
+      "atr_pips": 23.1,
       "levels": [
         {
           "name": "ceiling",
           "price": 1.43,
-          "dist_pips": -242.0
+          "dist_pips": -244.0
         },
         {
           "name": "floor",
           "price": 1.41,
-          "dist_pips": -42.0
+          "dist_pips": -44.0
         },
         {
           "name": "hard_floor",
           "price": 1.4,
-          "dist_pips": 58.0
+          "dist_pips": 56.0
         }
       ],
       "nearest": {
         "name": "floor",
         "price": 1.41,
-        "dist_pips": -42.0
+        "dist_pips": -44.0
       },
-      "box_pos": 0.193,
+      "box_pos": 0.187,
       "regime": "CHOPPY",
       "gate": {
         "open": false,
@@ -709,7 +726,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 51.1. Daily bias flat. Nearest level 1.41 (-42.0 pips). No trigger at a level yet."
+          "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 50.5. Daily bias flat. Nearest level 1.41 (-44.0 pips). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -726,103 +743,6 @@
       },
       "source": "Yahoo CAD=X (USD/CAD, free feed)"
     },
-    "audusd": {
-      "inst": "audusd",
-      "name": "AUD/USD",
-      "parked": false,
-      "macro_only": true,
-      "unit": "pips",
-      "dp": 5,
-      "pip_mult": 10000,
-      "pip_value": 0.1,
-      "box": [
-        0.68,
-        0.7
-      ],
-      "setup": {
-        "trend": "up",
-        "ema8": 0.70109,
-        "dist_ema8_pips": 16.1,
-        "waiting": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
-        "plan": null
-      },
-      "patterns": [],
-      "strategy": null,
-      "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "13:41:10",
-      "updated_full": "Tue 21 Jul 2026 13:41 GST",
-      "price": 0.7027,
-      "bias": "Bullish",
-      "confidence": 66,
-      "confidence_why": "Daily bias still flat, momentum with the trend",
-      "analysis": "AUD/USD is pushing up on the 4-hour, 66% conviction. Daily bias still flat. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (27.0 pips away). A soft dollar (-0.05% DXY) is a tailwind for the read.",
-      "watch": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree. (levels provisional \u2014 confirm on the chart)",
-      "tf4": {
-        "ema8": 0.70109,
-        "ema21": 0.69994,
-        "ema55": 0.69792,
-        "rsi": 68.24905,
-        "atr": 0.00136,
-        "trend": "BULLISH"
-      },
-      "daily": {
-        "ema8": 0.69818,
-        "ema21": 0.69742,
-        "ema55": 0.70146,
-        "trend": "MIXED"
-      },
-      "atr_pips": 13.6,
-      "levels": [
-        {
-          "name": "ceiling",
-          "price": 0.7,
-          "dist_pips": 27.0
-        },
-        {
-          "name": "floor",
-          "price": 0.69,
-          "dist_pips": 127.0
-        },
-        {
-          "name": "hard_floor",
-          "price": 0.68,
-          "dist_pips": 227.0
-        }
-      ],
-      "nearest": {
-        "name": "ceiling",
-        "price": 0.7,
-        "dist_pips": 27.0
-      },
-      "box_pos": 1.135,
-      "regime": "CHOPPY",
-      "gate": {
-        "open": false,
-        "trigger": false,
-        "direction_aligned": false,
-        "regime_ok": false
-      },
-      "verdict": "NO TRADE \u2014 PATIENCE",
-      "desks": {
-        "chartist": {
-          "status": "hold",
-          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 68.2. Daily bias flat. Nearest level 0.7 (27.0 pips). No trigger at a level yet."
-        },
-        "quant": {
-          "status": "hold",
-          "read": "Volatility dead/coiling (4H ATR ~14 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
-        },
-        "risk": {
-          "status": "go",
-          "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
-        },
-        "trade": {
-          "status": "idle",
-          "read": "On standby until a level and a clean trigger appear together."
-        }
-      },
-      "source": "Yahoo AUDUSD=X (free feed)"
-    },
     "wti": {
       "inst": "wti",
       "name": "US Oil \u00b7 WTI",
@@ -838,8 +758,8 @@
       ],
       "setup": {
         "trend": "up",
-        "ema8": 82.18,
-        "dist_ema8_pips": 0.8,
+        "ema8": 82.2,
+        "dist_ema8_pips": 0.9,
         "waiting": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
         "plan": null
       },
@@ -863,26 +783,26 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "13:41:12",
-      "updated_full": "Tue 21 Jul 2026 13:41 GST",
-      "price": 83.01,
+      "updated": "14:02:07",
+      "updated_full": "Tue 21 Jul 2026 14:02 GST",
+      "price": 83.09,
       "bias": "Bullish",
       "confidence": 73,
       "confidence_why": "Daily bias still flat, momentum with the trend, volatility is expanding",
-      "analysis": "US Oil \u00b7 WTI is pushing up on the 4-hour, 73% conviction. Daily bias still flat. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (8.0 pts away).",
+      "analysis": "US Oil \u00b7 WTI is pushing up on the 4-hour, 73% conviction. Daily bias still flat. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (8.1 pts away).",
       "watch": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree. (levels provisional \u2014 confirm on the chart)",
       "tf4": {
-        "ema8": 82.18,
-        "ema21": 81.17,
+        "ema8": 82.2,
+        "ema21": 81.18,
         "ema55": 78.46,
-        "rsi": 62.07,
-        "atr": 1.47,
+        "rsi": 62.35,
+        "atr": 1.48,
         "trend": "BULLISH"
       },
       "daily": {
-        "ema8": 79.8,
-        "ema21": 78.09,
-        "ema55": 82.28,
+        "ema8": 79.82,
+        "ema21": 78.1,
+        "ema55": 82.29,
         "trend": "MIXED"
       },
       "atr_pips": 1.5,
@@ -890,25 +810,25 @@
         {
           "name": "ceiling",
           "price": 75.0,
-          "dist_pips": 8.0
+          "dist_pips": 8.1
         },
         {
           "name": "floor",
           "price": 70.0,
-          "dist_pips": 13.0
+          "dist_pips": 13.1
         },
         {
           "name": "hard_floor",
           "price": 68.0,
-          "dist_pips": 15.0
+          "dist_pips": 15.1
         }
       ],
       "nearest": {
         "name": "ceiling",
         "price": 75.0,
-        "dist_pips": 8.0
+        "dist_pips": 8.1
       },
-      "box_pos": 1.876,
+      "box_pos": 1.886,
       "regime": "RUNNING",
       "gate": {
         "open": false,
@@ -920,7 +840,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; running. RSI 62.1. Daily bias flat. Nearest level 75.0 (8.0 pts). No trigger at a level yet."
+          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; running. RSI 62.4. Daily bias flat. Nearest level 75.0 (8.1 pts). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -984,15 +904,15 @@
       "note": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree."
     },
     {
-      "key": "audusd",
-      "market": "AUD/USD",
+      "key": "eurusd",
+      "market": "EUR/USD",
       "unit": "pips",
-      "confidence": 66,
-      "bias": "Bullish",
-      "provisional": true,
+      "confidence": 67,
+      "bias": "Bearish",
+      "provisional": false,
       "tier": "forming",
-      "dir": "long",
-      "note": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree."
+      "dir": "short",
+      "note": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short."
     },
     {
       "key": "gold",
@@ -1008,14 +928,14 @@
     }
   ],
   "context": {
-    "updated_full": "Tue 21 Jul 2026 13:40 GST",
+    "updated_full": "Tue 21 Jul 2026 14:01 GST",
     "gauges": {
       "dxy": {
         "name": "US Dollar Index (DXY)",
         "symbol": "DX-Y.NYB",
-        "value": 100.94,
-        "chg": -0.05,
-        "chg_pct": -0.05,
+        "value": 100.91,
+        "chg": -0.08,
+        "chg_pct": -0.08,
         "month_dir": "down",
         "unit": ""
       },
@@ -1031,18 +951,18 @@
       "oil": {
         "name": "Oil (WTI)",
         "symbol": "CL=F",
-        "value": 83.0,
-        "chg": -0.23,
-        "chg_pct": -0.28,
+        "value": 83.07,
+        "chg": -0.16,
+        "chg_pct": -0.19,
         "month_dir": "up",
         "unit": ""
       },
       "vix": {
         "name": "Volatility (VIX)",
         "symbol": "^VIX",
-        "value": 17.51,
-        "chg": -1.14,
-        "chg_pct": -6.11,
+        "value": 17.55,
+        "chg": -1.1,
+        "chg_pct": -5.9,
         "month_dir": "up",
         "unit": ""
       }
@@ -1055,7 +975,7 @@
         "ccy": "GBP",
         "impact": "High",
         "when_gst": "Wed 10:00",
-        "mins_to": 1219,
+        "mins_to": 1198,
         "forecast": "2.7%",
         "previous": "2.8%"
       },
@@ -1064,7 +984,7 @@
         "ccy": "AUD",
         "impact": "High",
         "when_gst": "Thu 05:30",
-        "mins_to": 2389,
+        "mins_to": 2368,
         "forecast": "16.4K",
         "previous": "40.3K"
       },
@@ -1073,7 +993,7 @@
         "ccy": "AUD",
         "impact": "High",
         "when_gst": "Thu 05:30",
-        "mins_to": 2389,
+        "mins_to": 2368,
         "forecast": "4.4%",
         "previous": "4.4%"
       },
@@ -1082,7 +1002,7 @@
         "ccy": "EUR",
         "impact": "High",
         "when_gst": "Thu 16:15",
-        "mins_to": 3034,
+        "mins_to": 3013,
         "forecast": "2.40%",
         "previous": "2.40%"
       },
@@ -1091,7 +1011,7 @@
         "ccy": "EUR",
         "impact": "High",
         "when_gst": "Thu 16:15",
-        "mins_to": 3034,
+        "mins_to": 3013,
         "forecast": "",
         "previous": ""
       },
@@ -1100,7 +1020,7 @@
         "ccy": "USD",
         "impact": "Medium",
         "when_gst": "Thu 16:30",
-        "mins_to": 3049,
+        "mins_to": 3028,
         "forecast": "211K",
         "previous": "208K"
       },
@@ -1109,7 +1029,7 @@
         "ccy": "EUR",
         "impact": "High",
         "when_gst": "Thu 16:45",
-        "mins_to": 3064,
+        "mins_to": 3043,
         "forecast": "",
         "previous": ""
       },
@@ -1118,7 +1038,7 @@
         "ccy": "GBP",
         "impact": "Medium",
         "when_gst": "Fri 10:00",
-        "mins_to": 4099,
+        "mins_to": 4078,
         "forecast": "-0.3%",
         "previous": "1.2%"
       }
@@ -1205,7 +1125,7 @@
         "market": "USD/JPY"
       }
     ],
-    "updated_full": "Tue 21 Jul 2026 13:41 GST",
+    "updated_full": "Tue 21 Jul 2026 14:02 GST",
     "sources": "ForexFactory calendar \u00b7 Yahoo Finance headlines (free feeds)"
   }
 }
