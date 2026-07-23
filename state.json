@@ -13,8 +13,8 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.1419,
-    "dist_ema8_pips": -3.0,
+    "ema8": 1.14182,
+    "dist_ema8_pips": -6.2,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
@@ -22,80 +22,80 @@
     {
       "name": "Evening star",
       "dir": "bearish",
-      "tier": "watch",
-      "at_level": false,
+      "tier": "act",
+      "at_level": true,
       "with_trend": true,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
     },
     {
       "name": "Momentum candle",
       "dir": "bearish",
-      "tier": "watch",
-      "at_level": false,
+      "tier": "act",
+      "at_level": true,
       "with_trend": true,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "14:05:47",
-  "updated_full": "Thu 23 Jul 2026 14:05 GST",
-  "price": 1.1416,
+  "updated": "14:26:19",
+  "updated_full": "Thu 23 Jul 2026 14:26 GST",
+  "price": 1.1412,
   "bias": "Bearish",
-  "confidence": 67,
-  "confidence_why": "4H and Daily agree",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 67% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (16.0 pips away). A soft dollar (-0.01% DXY) is a headwind to the read.",
+  "confidence": 83,
+  "confidence_why": "4H and Daily agree, momentum with the trend, price is at a level",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 83% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (12.0 pips away). A firm dollar (+0.02% DXY) is a tailwind for the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.1419,
-    "ema21": 1.14213,
-    "ema55": 1.14262,
-    "rsi": 46.2355,
-    "atr": 0.0014,
+    "ema8": 1.14182,
+    "ema21": 1.14209,
+    "ema55": 1.1426,
+    "rsi": 44.56011,
+    "atr": 0.00141,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.14206,
-    "ema21": 1.14356,
-    "ema55": 1.15056,
+    "ema8": 1.14198,
+    "ema21": 1.14353,
+    "ema55": 1.15054,
     "trend": "BEARISH"
   },
-  "atr_pips": 14.0,
+  "atr_pips": 14.1,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -34.0
+      "dist_pips": -38.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 16.0
+      "dist_pips": 12.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 66.0
+      "dist_pips": 62.0
     }
   ],
   "nearest": {
     "name": "floor",
     "price": 1.14,
-    "dist_pips": 16.0
+    "dist_pips": 12.0
   },
-  "box_pos": 0.66,
+  "box_pos": 0.62,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
-    "trigger": false,
+    "trigger": true,
     "direction_aligned": true,
     "regime_ok": false
   },
   "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
-      "status": "hold",
-      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; choppy. RSI 46.2. Daily bias agrees. Nearest level 1.14 (16.0 pips). No trigger at a level yet."
+      "status": "go",
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; choppy. RSI 44.6. Daily bias agrees. Nearest level 1.14 (12.0 pips). Trigger in play."
     },
     "quant": {
       "status": "hold",
