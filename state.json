@@ -12,94 +12,86 @@
     1.145
   ],
   "setup": {
-    "trend": "mixed",
-    "ema8": 1.13952,
-    "dist_ema8_pips": 21.8,
-    "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
+    "trend": "up",
+    "ema8": 1.1432,
+    "dist_ema8_pips": 21.0,
+    "waiting": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
     "plan": null
   },
   "patterns": [
     {
-      "name": "Morning star",
-      "dir": "bullish",
-      "tier": "noise",
-      "at_level": false,
+      "name": "Spinning top",
+      "dir": "neutral",
+      "tier": "watch",
+      "at_level": true,
       "with_trend": false,
-      "note": "A pattern with no level is just a candle. Ignore it."
-    },
-    {
-      "name": "Expansion candle",
-      "dir": "bullish",
-      "tier": "noise",
-      "at_level": false,
-      "with_trend": false,
-      "note": "A pattern with no level is just a candle. Ignore it."
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "22:35:15",
-  "updated_full": "Wed 29 Jul 2026 22:35 GST",
-  "price": 1.1417,
-  "bias": "Neutral",
-  "confidence": 48,
-  "confidence_why": "the 4H EMAs are tangled \u2014 no clean trend",
-  "analysis": "EUR/USD is going sideways on the 4-hour, 48% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (17.0 pips away). Dollar soft today (-0.33% DXY).",
-  "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
+  "updated": "10:56:05",
+  "updated_full": "Thu 30 Jul 2026 10:56 GST",
+  "price": 1.1453,
+  "bias": "Bullish",
+  "confidence": 67,
+  "confidence_why": "Daily bias is fighting the 4H, momentum with the trend, volatility is expanding, price is at a level",
+  "analysis": "EUR/USD is pushing up on the 4-hour, 67% conviction. But the Daily bias is against it \u2014 no trade until they line up. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (3.0 pips away). A firm dollar (+0.19% DXY) is a headwind to the read.",
+  "watch": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
   "tf4": {
-    "ema8": 1.13952,
-    "ema21": 1.13924,
-    "ema55": 1.1402,
-    "rsi": 58.5274,
-    "atr": 0.00208,
-    "trend": "MIXED"
+    "ema8": 1.1432,
+    "ema21": 1.14112,
+    "ema55": 1.1409,
+    "rsi": 63.61951,
+    "atr": 0.00236,
+    "trend": "BULLISH"
   },
   "daily": {
-    "ema8": 1.14026,
-    "ema21": 1.14211,
-    "ema55": 1.14898,
+    "ema8": 1.14087,
+    "ema21": 1.14216,
+    "ema55": 1.14875,
     "trend": "BEARISH"
   },
-  "atr_pips": 20.8,
+  "atr_pips": 23.6,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -33.0
+      "dist_pips": 3.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 17.0
+      "dist_pips": 53.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 67.0
+      "dist_pips": 103.0
     }
   ],
   "nearest": {
-    "name": "floor",
-    "price": 1.14,
-    "dist_pips": 17.0
+    "name": "ceiling",
+    "price": 1.145,
+    "dist_pips": 3.0
   },
-  "box_pos": 0.67,
-  "regime": "CHOPPY",
+  "box_pos": 1.03,
+  "regime": "RUNNING",
   "gate": {
     "open": false,
-    "trigger": false,
+    "trigger": true,
     "direction_aligned": false,
-    "regime_ok": false
+    "regime_ok": true
   },
   "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 58.5. Daily bias flat. Nearest level 1.14 (17.0 pips). No trigger at a level yet."
+      "read": "4H bullish (8/21/55 stack), price above the 8-EMA; running. RSI 63.6. Daily bias disagrees. Nearest level 1.145 (3.0 pips). Trigger in play."
     },
     "quant": {
-      "status": "hold",
-      "read": "Volatility dead/coiling (4H ATR ~21 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "status": "go",
+      "read": "Volatility expanding (4H ATR ~24 pips). Edge worth measuring."
     },
     "risk": {
       "status": "go",
