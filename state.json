@@ -13,16 +13,25 @@
   ],
   "setup": {
     "trend": "up",
-    "ema8": 1.14934,
-    "dist_ema8_pips": 21.6,
+    "ema8": 1.14985,
+    "dist_ema8_pips": 16.5,
     "waiting": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
     "plan": null
   },
-  "patterns": [],
+  "patterns": [
+    {
+      "name": "Inside bar",
+      "dir": "neutral",
+      "tier": "noise",
+      "at_level": false,
+      "with_trend": false,
+      "note": "A pattern with no level is just a candle. Ignore it."
+    }
+  ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "06:53:40",
-  "updated_full": "Fri 31 Jul 2026 06:53 GST",
+  "updated": "08:21:44",
+  "updated_full": "Fri 31 Jul 2026 08:21 GST",
   "price": 1.1515,
   "bias": "Bullish",
   "confidence": 78,
@@ -30,11 +39,11 @@
   "analysis": "EUR/USD is pushing up on the 4-hour, 78% conviction. Daily bias still flat. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (65.0 pips away). A firm dollar (+0.17% DXY) is a headwind to the read.",
   "watch": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
   "tf4": {
-    "ema8": 1.14934,
-    "ema21": 1.14508,
-    "ema55": 1.14266,
-    "rsi": 67.80154,
-    "atr": 0.00257,
+    "ema8": 1.14985,
+    "ema21": 1.14568,
+    "ema55": 1.14298,
+    "rsi": 67.77058,
+    "atr": 0.00243,
     "trend": "BULLISH"
   },
   "daily": {
@@ -43,7 +52,7 @@
     "ema55": 1.14889,
     "trend": "MIXED"
   },
-  "atr_pips": 25.7,
+  "atr_pips": 24.3,
   "levels": [
     {
       "name": "ceiling",
@@ -82,7 +91,7 @@
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility expanding (4H ATR ~26 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility expanding (4H ATR ~24 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
