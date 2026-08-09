@@ -1,9 +1,10 @@
 {
-  "updated_full": "Sun 09 Aug 2026 20:19 GST",
-  "updated_epoch": 1786292381,
+  "updated_full": "Sun 09 Aug 2026 20:58 GST",
+  "updated_epoch": 1786294707,
   "order": [
     "eurusd",
     "gold",
+    "gbpusd",
     "usdjpy",
     "eurjpy",
     "usdchf",
@@ -44,8 +45,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:16:16",
-      "updated_full": "Sun 09 Aug 2026 20:16 GST",
+      "updated": "20:57:58",
+      "updated_full": "Sun 09 Aug 2026 20:57 GST",
       "price": 1.1562,
       "bias": "Bullish",
       "confidence": 61,
@@ -158,8 +159,8 @@
         "atr_daily": 83.13
       },
       "timeframe": "Daily \u00b7 Trend + Re-Fire",
-      "updated": "20:16:28",
-      "updated_full": "Sun 09 Aug 2026 20:16 GST",
+      "updated": "20:58:02",
+      "updated_full": "Sun 09 Aug 2026 20:58 GST",
       "price": 4399.7,
       "bias": "Bullish",
       "confidence": 74,
@@ -232,6 +233,112 @@
       },
       "source": "Yahoo GC=F (COMEX gold futures)"
     },
+    "gbpusd": {
+      "inst": "gbpusd",
+      "name": "GBP/USD",
+      "parked": false,
+      "macro_only": true,
+      "unit": "pips",
+      "dp": 5,
+      "pip_mult": 10000,
+      "pip_value": 0.1,
+      "box": [
+        1.32,
+        1.35
+      ],
+      "setup": {
+        "trend": "up",
+        "ema8": 1.34761,
+        "dist_ema8_pips": 15.9,
+        "waiting": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long.",
+        "plan": null
+      },
+      "patterns": [
+        {
+          "name": "Bearish engulfing",
+          "dir": "bearish",
+          "tier": "act",
+          "at_level": true,
+          "with_trend": false,
+          "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+        }
+      ],
+      "strategy": null,
+      "timeframe": "4H entry \u00b7 Daily bias",
+      "updated": "20:58:06",
+      "updated_full": "Sun 09 Aug 2026 20:58 GST",
+      "price": 1.3492,
+      "bias": "Bullish",
+      "confidence": 83,
+      "confidence_why": "4H and Daily agree, momentum with the trend, price is at a level",
+      "analysis": "GBP/USD is pushing up on the 4-hour, 83% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (8.0 pips away). A soft dollar (-0.37% DXY) is a tailwind for the read.",
+      "watch": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long. (levels provisional \u2014 confirm on the chart)",
+      "tf4": {
+        "ema8": 1.34761,
+        "ema21": 1.34632,
+        "ema55": 1.34352,
+        "rsi": 64.11251,
+        "atr": 0.00195,
+        "trend": "BULLISH"
+      },
+      "daily": {
+        "ema8": 1.34469,
+        "ema21": 1.34112,
+        "ema55": 1.33952,
+        "trend": "BULLISH"
+      },
+      "atr_pips": 19.5,
+      "levels": [
+        {
+          "name": "ceiling",
+          "price": 1.35,
+          "dist_pips": -8.0
+        },
+        {
+          "name": "floor",
+          "price": 1.33,
+          "dist_pips": 192.0
+        },
+        {
+          "name": "hard_floor",
+          "price": 1.32,
+          "dist_pips": 292.0
+        }
+      ],
+      "nearest": {
+        "name": "ceiling",
+        "price": 1.35,
+        "dist_pips": -8.0
+      },
+      "box_pos": 0.973,
+      "regime": "CHOPPY",
+      "gate": {
+        "open": false,
+        "trigger": true,
+        "direction_aligned": true,
+        "regime_ok": false
+      },
+      "verdict": "NO TRADE \u2014 PATIENCE",
+      "desks": {
+        "chartist": {
+          "status": "go",
+          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 64.1. Daily bias agrees. Nearest level 1.35 (-8.0 pips). Trigger in play."
+        },
+        "quant": {
+          "status": "hold",
+          "read": "Volatility dead/coiling (4H ATR ~20 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+        },
+        "risk": {
+          "status": "go",
+          "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
+        },
+        "trade": {
+          "status": "idle",
+          "read": "On standby until a level and a clean trigger appear together."
+        }
+      },
+      "source": "Yahoo GBPUSD=X (free feed)"
+    },
     "usdjpy": {
       "inst": "usdjpy",
       "name": "USD/JPY",
@@ -255,8 +362,8 @@
       "patterns": [],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:19:24",
-      "updated_full": "Sun 09 Aug 2026 20:19 GST",
+      "updated": "20:58:09",
+      "updated_full": "Sun 09 Aug 2026 20:58 GST",
       "price": 157.745,
       "bias": "Bearish",
       "confidence": 89,
@@ -361,8 +468,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:19:26",
-      "updated_full": "Sun 09 Aug 2026 20:19 GST",
+      "updated": "20:58:12",
+      "updated_full": "Sun 09 Aug 2026 20:58 GST",
       "price": 182.378,
       "bias": "Neutral",
       "confidence": 48,
@@ -467,8 +574,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:19:29",
-      "updated_full": "Sun 09 Aug 2026 20:19 GST",
+      "updated": "20:58:14",
+      "updated_full": "Sun 09 Aug 2026 20:58 GST",
       "price": 0.8077,
       "bias": "Bearish",
       "confidence": 61,
@@ -564,8 +671,8 @@
       "patterns": [],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:19:33",
-      "updated_full": "Sun 09 Aug 2026 20:19 GST",
+      "updated": "20:58:17",
+      "updated_full": "Sun 09 Aug 2026 20:58 GST",
       "price": 1.3938,
       "bias": "Bearish",
       "confidence": 78,
@@ -678,8 +785,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:19:35",
-      "updated_full": "Sun 09 Aug 2026 20:19 GST",
+      "updated": "20:58:19",
+      "updated_full": "Sun 09 Aug 2026 20:58 GST",
       "price": 0.7071,
       "bias": "Bullish",
       "confidence": 61,
@@ -800,8 +907,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:19:37",
-      "updated_full": "Sun 09 Aug 2026 20:19 GST",
+      "updated": "20:58:22",
+      "updated_full": "Sun 09 Aug 2026 20:58 GST",
       "price": 78.18,
       "bias": "Bearish",
       "confidence": 67,
@@ -904,6 +1011,17 @@
       "note": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short."
     },
     {
+      "key": "gbpusd",
+      "market": "GBP/USD",
+      "unit": "pips",
+      "confidence": 83,
+      "bias": "Bullish",
+      "provisional": true,
+      "tier": "forming",
+      "dir": "long",
+      "note": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long."
+    },
+    {
       "key": "usdcad",
       "market": "USD/CAD",
       "unit": "pips",
@@ -961,7 +1079,7 @@
     }
   ],
   "context": {
-    "updated_full": "Sun 09 Aug 2026 20:16 GST",
+    "updated_full": "Sun 09 Aug 2026 20:57 GST",
     "gauges": {
       "dxy": {
         "name": "US Dollar Index (DXY)",
@@ -1008,7 +1126,7 @@
         "ccy": "AUD",
         "impact": "High",
         "when_gst": "Tue 08:30",
-        "mins_to": 2170,
+        "mins_to": 2132,
         "forecast": "4.35%",
         "previous": "4.35%"
       },
@@ -1017,7 +1135,7 @@
         "ccy": "AUD",
         "impact": "High",
         "when_gst": "Tue 08:30",
-        "mins_to": 2170,
+        "mins_to": 2132,
         "forecast": "",
         "previous": ""
       },
@@ -1026,7 +1144,7 @@
         "ccy": "AUD",
         "impact": "High",
         "when_gst": "Tue 08:30",
-        "mins_to": 2170,
+        "mins_to": 2132,
         "forecast": "",
         "previous": ""
       },
@@ -1035,7 +1153,7 @@
         "ccy": "AUD",
         "impact": "High",
         "when_gst": "Tue 09:30",
-        "mins_to": 2230,
+        "mins_to": 2192,
         "forecast": "",
         "previous": ""
       },
@@ -1044,7 +1162,7 @@
         "ccy": "USD",
         "impact": "High",
         "when_gst": "Wed 16:30",
-        "mins_to": 4090,
+        "mins_to": 4052,
         "forecast": "0.2%",
         "previous": "0.0%"
       },
@@ -1053,7 +1171,7 @@
         "ccy": "USD",
         "impact": "High",
         "when_gst": "Wed 16:30",
-        "mins_to": 4090,
+        "mins_to": 4052,
         "forecast": "2.5%",
         "previous": "2.6%"
       },
@@ -1062,7 +1180,7 @@
         "ccy": "USD",
         "impact": "High",
         "when_gst": "Wed 16:30",
-        "mins_to": 4090,
+        "mins_to": 4052,
         "forecast": "0.1%",
         "previous": "-0.4%"
       },
@@ -1071,7 +1189,7 @@
         "ccy": "USD",
         "impact": "High",
         "when_gst": "Wed 16:30",
-        "mins_to": 4090,
+        "mins_to": 4052,
         "forecast": "3.4%",
         "previous": "3.5%"
       }
@@ -1118,18 +1236,18 @@
         "market": "EUR/USD"
       },
       {
-        "title": "UK\u2019s Nephos to attest Agant\u2019s GBPA stablecoin reserves",
-        "link": "https://www.internationalaccountingbulletin.com/news/uks-nephos-to-attest-agants-gbpa-stablecoin-reserves/?.tsrc=rss",
-        "pub": "Fri, 07 Aug 2026 08:57:27 +0000",
-        "strength": "minor",
-        "direction": "flat",
-        "market": "GBP/USD"
-      },
-      {
         "title": "US Dollar Price Forecast: NFP Week Keeps DXY, EUR/USD and GBP/USD in Focus",
         "link": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-nfp-064558902.html?.tsrc=rss",
         "pub": "Wed, 05 Aug 2026 06:45:58 +0000",
         "strength": "big",
+        "direction": "flat",
+        "market": "GBP/USD"
+      },
+      {
+        "title": "US Dollar Price Forecast: U.S. Data in Focus as DXY, EUR/USD and GBP/USD Test Key Levels",
+        "link": "https://finance.yahoo.com/markets/currencies/articles/us-dollar-price-forecast-u-070935176.html?.tsrc=rss",
+        "pub": "Tue, 04 Aug 2026 07:09:35 +0000",
+        "strength": "minor",
         "direction": "flat",
         "market": "GBP/USD"
       },
@@ -1158,7 +1276,7 @@
         "market": "USD/JPY"
       }
     ],
-    "updated_full": "Sun 09 Aug 2026 20:19 GST",
+    "updated_full": "Sun 09 Aug 2026 20:58 GST",
     "sources": "ForexFactory calendar \u00b7 Yahoo Finance headlines (free feeds)"
   }
 }
