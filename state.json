@@ -13,15 +13,23 @@
   ],
   "setup": {
     "trend": "mixed",
-    "ema8": 1.1535,
-    "dist_ema8_pips": 2.0,
+    "ema8": 1.15341,
+    "dist_ema8_pips": -1.1,
     "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
     "plan": null
   },
   "patterns": [
     {
-      "name": "Doji",
+      "name": "Inside bar",
       "dir": "neutral",
+      "tier": "noise",
+      "at_level": false,
+      "with_trend": false,
+      "note": "A pattern with no level is just a candle. Ignore it."
+    },
+    {
+      "name": "Evening star",
+      "dir": "bearish",
       "tier": "noise",
       "at_level": false,
       "with_trend": false,
@@ -30,52 +38,52 @@
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "19:51:01",
-  "updated_full": "Thu 13 Aug 2026 19:51 GST",
-  "price": 1.1537,
+  "updated": "20:11:30",
+  "updated_full": "Thu 13 Aug 2026 20:11 GST",
+  "price": 1.1533,
   "bias": "Neutral",
   "confidence": 42,
   "confidence_why": "the 4H EMAs are tangled \u2014 no clean trend",
-  "analysis": "EUR/USD is going sideways on the 4-hour, 42% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (87.0 pips away). Dollar soft today (-0.12% DXY).",
+  "analysis": "EUR/USD is going sideways on the 4-hour, 42% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (83.0 pips away). Dollar soft today (-0.08% DXY).",
   "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
   "tf4": {
-    "ema8": 1.1535,
-    "ema21": 1.15388,
-    "ema55": 1.15268,
-    "rsi": 48.7824,
-    "atr": 0.00143,
+    "ema8": 1.15341,
+    "ema21": 1.1538,
+    "ema55": 1.15269,
+    "rsi": 46.47499,
+    "atr": 0.00134,
     "trend": "MIXED"
   },
   "daily": {
-    "ema8": 1.15301,
-    "ema21": 1.14941,
-    "ema55": 1.15032,
+    "ema8": 1.15292,
+    "ema21": 1.14937,
+    "ema55": 1.1503,
     "trend": "MIXED"
   },
-  "atr_pips": 14.3,
+  "atr_pips": 13.4,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": 87.0
+      "dist_pips": 83.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 137.0
+      "dist_pips": 133.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 187.0
+      "dist_pips": 183.0
     }
   ],
   "nearest": {
     "name": "ceiling",
     "price": 1.145,
-    "dist_pips": 87.0
+    "dist_pips": 83.0
   },
-  "box_pos": 1.87,
+  "box_pos": 1.83,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
@@ -87,11 +95,11 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 48.8. Daily bias flat. Nearest level 1.145 (87.0 pips). No trigger at a level yet."
+      "read": "4H mixed (8/21/55 stack), price under the 8-EMA; choppy. RSI 46.5. Daily bias flat. Nearest level 1.145 (83.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility dead/coiling (4H ATR ~14 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility dead/coiling (4H ATR ~13 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
