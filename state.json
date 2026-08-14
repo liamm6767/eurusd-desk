@@ -13,60 +13,69 @@
   ],
   "setup": {
     "trend": "up",
-    "ema8": 1.1546,
-    "dist_ema8_pips": 21.0,
+    "ema8": 1.15469,
+    "dist_ema8_pips": 24.1,
     "waiting": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
     "plan": null
   },
-  "patterns": [],
+  "patterns": [
+    {
+      "name": "Momentum candle",
+      "dir": "bullish",
+      "tier": "watch",
+      "at_level": false,
+      "with_trend": true,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    }
+  ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "15:26:18",
-  "updated_full": "Fri 14 Aug 2026 15:26 GST",
-  "price": 1.1567,
+  "updated": "15:47:54",
+  "updated_full": "Fri 14 Aug 2026 15:47 GST",
+  "price": 1.1571,
   "bias": "Bullish",
-  "confidence": 61,
+  "confidence": 66,
   "confidence_why": "Daily bias still flat, momentum with the trend",
-  "analysis": "EUR/USD is pushing up on the 4-hour, 61% conviction. Daily bias still flat. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (117.0 pips away). A soft dollar (-0.28% DXY) is a tailwind for the read.",
+  "analysis": "EUR/USD is pushing up on the 4-hour, 66% conviction. Daily bias still flat. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (121.0 pips away). A soft dollar (-0.34% DXY) is a tailwind for the read.",
   "watch": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
   "tf4": {
-    "ema8": 1.1546,
-    "ema21": 1.1542,
-    "ema55": 1.153,
-    "rsi": 64.99724,
-    "atr": 0.0013,
+    "ema8": 1.15469,
+    "ema21": 1.15424,
+    "ema55": 1.15301,
+    "rsi": 66.42833,
+    "atr": 0.00135,
     "trend": "BULLISH"
   },
   "daily": {
-    "ema8": 1.15372,
-    "ema21": 1.15002,
-    "ema55": 1.15052,
+    "ema8": 1.15381,
+    "ema21": 1.15006,
+    "ema55": 1.15054,
     "trend": "MIXED"
   },
-  "atr_pips": 13.0,
+  "atr_pips": 13.5,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": 117.0
+      "dist_pips": 121.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 167.0
+      "dist_pips": 171.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 217.0
+      "dist_pips": 221.0
     }
   ],
   "nearest": {
     "name": "ceiling",
     "price": 1.145,
-    "dist_pips": 117.0
+    "dist_pips": 121.0
   },
-  "box_pos": 2.17,
+  "box_pos": 2.21,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
@@ -78,7 +87,7 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 65.0. Daily bias flat. Nearest level 1.145 (117.0 pips). No trigger at a level yet."
+      "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 66.4. Daily bias flat. Nearest level 1.145 (121.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
