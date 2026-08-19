@@ -13,36 +13,12 @@
   ],
   "setup": {
     "trend": "up",
-    "ema8": 1.16209,
-    "dist_ema8_pips": 48.1,
+    "ema8": 1.16218,
+    "dist_ema8_pips": 51.2,
     "waiting": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long.",
     "plan": null
   },
   "patterns": [
-    {
-      "name": "Doji",
-      "dir": "neutral",
-      "tier": "noise",
-      "at_level": false,
-      "with_trend": false,
-      "note": "A pattern with no level is just a candle. Ignore it."
-    },
-    {
-      "name": "Hammer / bullish pin",
-      "dir": "bullish",
-      "tier": "watch",
-      "at_level": false,
-      "with_trend": true,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
-    },
-    {
-      "name": "Shooting star / bearish pin",
-      "dir": "bearish",
-      "tier": "watch",
-      "at_level": false,
-      "with_trend": false,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
-    },
     {
       "name": "Inside bar",
       "dir": "neutral",
@@ -54,52 +30,52 @@
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "20:01:26",
-  "updated_full": "Wed 19 Aug 2026 20:01 GST",
-  "price": 1.1669,
+  "updated": "20:21:59",
+  "updated_full": "Wed 19 Aug 2026 20:21 GST",
+  "price": 1.1673,
   "bias": "Bullish",
   "confidence": 94,
   "confidence_why": "4H and Daily agree, momentum with the trend, volatility is expanding",
-  "analysis": "EUR/USD is pushing up on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (219.0 pips away). A soft dollar (-0.73% DXY) is a tailwind for the read.",
+  "analysis": "EUR/USD is pushing up on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (223.0 pips away). A soft dollar (-0.79% DXY) is a tailwind for the read.",
   "watch": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long.",
   "tf4": {
-    "ema8": 1.16209,
-    "ema21": 1.1595,
-    "ema55": 1.15656,
-    "rsi": 80.57529,
-    "atr": 0.00174,
+    "ema8": 1.16218,
+    "ema21": 1.15954,
+    "ema55": 1.15658,
+    "rsi": 81.12014,
+    "atr": 0.00178,
     "trend": "BULLISH"
   },
   "daily": {
-    "ema8": 1.15752,
-    "ema21": 1.15228,
-    "ema55": 1.1514,
+    "ema8": 1.15761,
+    "ema21": 1.15232,
+    "ema55": 1.15141,
     "trend": "BULLISH"
   },
-  "atr_pips": 17.4,
+  "atr_pips": 17.8,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": 219.0
+      "dist_pips": 223.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 269.0
+      "dist_pips": 273.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 319.0
+      "dist_pips": 323.0
     }
   ],
   "nearest": {
     "name": "ceiling",
     "price": 1.145,
-    "dist_pips": 219.0
+    "dist_pips": 223.0
   },
-  "box_pos": 3.19,
+  "box_pos": 3.23,
   "regime": "RUNNING",
   "gate": {
     "open": false,
@@ -111,11 +87,11 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H bullish (8/21/55 stack), price above the 8-EMA; running. RSI 80.6. Daily bias agrees. Nearest level 1.145 (219.0 pips). No trigger at a level yet."
+      "read": "4H bullish (8/21/55 stack), price above the 8-EMA; running. RSI 81.1. Daily bias agrees. Nearest level 1.145 (223.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility expanding (4H ATR ~17 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility expanding (4H ATR ~18 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
