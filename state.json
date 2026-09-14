@@ -13,60 +13,85 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.15733,
-    "dist_ema8_pips": -20.3,
+    "ema8": 1.15691,
+    "dist_ema8_pips": -35.1,
     "waiting": "4H downtrend, but the Daily bias isn't down yet \u2014 stand aside until they agree.",
     "plan": null
   },
-  "patterns": [],
+  "patterns": [
+    {
+      "name": "Bearish engulfing",
+      "dir": "bearish",
+      "tier": "watch",
+      "at_level": false,
+      "with_trend": true,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    },
+    {
+      "name": "Tweezer top",
+      "dir": "bearish",
+      "tier": "watch",
+      "at_level": false,
+      "with_trend": true,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    },
+    {
+      "name": "Momentum candle",
+      "dir": "bearish",
+      "tier": "watch",
+      "at_level": false,
+      "with_trend": true,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    }
+  ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "16:19:40",
-  "updated_full": "Mon 14 Sep 2026 16:19 GST",
-  "price": 1.1553,
+  "updated": "16:40:11",
+  "updated_full": "Mon 14 Sep 2026 16:40 GST",
+  "price": 1.1534,
   "bias": "Bearish",
   "confidence": 66,
   "confidence_why": "Daily bias is fighting the 4H, momentum with the trend, volatility is expanding",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 66% conviction. But the Daily bias is against it \u2014 no trade until they line up. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (103.0 pips away). A firm dollar (+0.36% DXY) is a tailwind for the read.",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 66% conviction. But the Daily bias is against it \u2014 no trade until they line up. Volatility is expanding \u2014 the market's running. Nearest structure: ceiling (84.0 pips away). A firm dollar (+0.46% DXY) is a tailwind for the read.",
   "watch": "4H downtrend, but the Daily bias isn't down yet \u2014 stand aside until they agree.",
   "tf4": {
-    "ema8": 1.15733,
-    "ema21": 1.15962,
-    "ema55": 1.16111,
-    "rsi": 28.26494,
-    "atr": 0.00169,
+    "ema8": 1.15691,
+    "ema21": 1.15945,
+    "ema55": 1.16104,
+    "rsi": 23.95896,
+    "atr": 0.00182,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.16056,
-    "ema21": 1.16013,
-    "ema55": 1.15672,
+    "ema8": 1.16015,
+    "ema21": 1.15996,
+    "ema55": 1.15665,
     "trend": "BULLISH"
   },
-  "atr_pips": 16.9,
+  "atr_pips": 18.2,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": 103.0
+      "dist_pips": 84.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 153.0
+      "dist_pips": 134.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 203.0
+      "dist_pips": 184.0
     }
   ],
   "nearest": {
     "name": "ceiling",
     "price": 1.145,
-    "dist_pips": 103.0
+    "dist_pips": 84.0
   },
-  "box_pos": 2.03,
+  "box_pos": 1.84,
   "regime": "RUNNING",
   "gate": {
     "open": false,
@@ -78,11 +103,11 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 28.3. Daily bias disagrees. Nearest level 1.145 (103.0 pips). No trigger at a level yet."
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 24.0. Daily bias disagrees. Nearest level 1.145 (84.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility expanding (4H ATR ~17 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility expanding (4H ATR ~18 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
