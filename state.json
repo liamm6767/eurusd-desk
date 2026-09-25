@@ -13,14 +13,14 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.13838,
-    "dist_ema8_pips": 2.2,
+    "ema8": 1.13835,
+    "dist_ema8_pips": 0.5,
     "waiting": "",
     "plan": {
       "dir": "short",
-      "entry": 1.1386,
-      "stop": 1.14159,
-      "target1": 1.13561,
+      "entry": 1.1384,
+      "stop": 1.14139,
+      "target1": 1.13541,
       "risk_pips": 29.9,
       "rr": 1.0,
       "then": "trail the rest with the 3xATR chandelier"
@@ -30,49 +30,49 @@
     {
       "name": "Bullish engulfing",
       "dir": "bullish",
-      "tier": "act",
-      "at_level": true,
+      "tier": "watch",
+      "at_level": false,
       "with_trend": false,
-      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     },
     {
       "name": "Tweezer bottom",
       "dir": "bullish",
-      "tier": "act",
-      "at_level": true,
+      "tier": "watch",
+      "at_level": false,
       "with_trend": false,
-      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     },
     {
       "name": "Morning star",
       "dir": "bullish",
-      "tier": "act",
-      "at_level": true,
+      "tier": "watch",
+      "at_level": false,
       "with_trend": false,
-      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "11:19:58",
-  "updated_full": "Fri 25 Sep 2026 11:19 GST",
-  "price": 1.1386,
+  "updated": "11:40:27",
+  "updated_full": "Fri 25 Sep 2026 11:40 GST",
+  "price": 1.1384,
   "bias": "Bearish",
-  "confidence": 83,
-  "confidence_why": "4H and Daily agree, momentum with the trend, price is at a level",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 83% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (14.0 pips away). A soft dollar (-0.11% DXY) is a headwind to the read.",
-  "watch": "SETUP LIVE \u2014 short at 1.1386, stop 1.14159, target 1.13561. Wait for the candle to close.",
+  "confidence": 77,
+  "confidence_why": "4H and Daily agree, momentum with the trend",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 77% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (16.0 pips away). A soft dollar (-0.11% DXY) is a headwind to the read.",
+  "watch": "SETUP LIVE \u2014 short at 1.1384, stop 1.14139, target 1.13541. Wait for the candle to close.",
   "tf4": {
-    "ema8": 1.13838,
-    "ema21": 1.14092,
+    "ema8": 1.13835,
+    "ema21": 1.14091,
     "ema55": 1.14644,
-    "rsi": 36.61516,
+    "rsi": 36.02519,
     "atr": 0.00199,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.14537,
-    "ema21": 1.15177,
+    "ema8": 1.14534,
+    "ema21": 1.15176,
     "ema55": 1.15386,
     "trend": "BEARISH"
   },
@@ -81,37 +81,37 @@
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -64.0
+      "dist_pips": -66.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": -14.0
+      "dist_pips": -16.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 36.0
+      "dist_pips": 34.0
     }
   ],
   "nearest": {
     "name": "floor",
     "price": 1.14,
-    "dist_pips": -14.0
+    "dist_pips": -16.0
   },
-  "box_pos": 0.36,
+  "box_pos": 0.34,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
-    "trigger": true,
+    "trigger": false,
     "direction_aligned": true,
     "regime_ok": false
   },
   "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
-      "status": "go",
-      "read": "4H bearish (8/21/55 stack), price above the 8-EMA; choppy. RSI 36.6. Daily bias agrees. Nearest level 1.14 (-14.0 pips). Trigger in play."
+      "status": "hold",
+      "read": "4H bearish (8/21/55 stack), price above the 8-EMA; choppy. RSI 36.0. Daily bias agrees. Nearest level 1.14 (-16.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
