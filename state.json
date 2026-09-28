@@ -13,101 +13,93 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.13954,
-    "dist_ema8_pips": 5.6,
+    "ema8": 1.13883,
+    "dist_ema8_pips": -8.3,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
   "patterns": [
     {
-      "name": "Hammer / bullish pin",
-      "dir": "bullish",
+      "name": "Bearish engulfing",
+      "dir": "bearish",
       "tier": "watch",
-      "at_level": true,
-      "with_trend": false,
+      "at_level": false,
+      "with_trend": true,
       "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     },
     {
-      "name": "Inside bar",
-      "dir": "neutral",
+      "name": "Tweezer top",
+      "dir": "bearish",
       "tier": "watch",
-      "at_level": true,
-      "with_trend": false,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
-    },
-    {
-      "name": "Tweezer bottom",
-      "dir": "bullish",
-      "tier": "watch",
-      "at_level": true,
-      "with_trend": false,
+      "at_level": false,
+      "with_trend": true,
       "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "03:02:55",
-  "updated_full": "Sun 27 Sep 2026 03:02 GST",
-  "price": 1.1401,
+  "updated": "10:56:08",
+  "updated_full": "Mon 28 Sep 2026 10:56 GST",
+  "price": 1.138,
   "bias": "Bearish",
-  "confidence": 83,
-  "confidence_why": "4H and Daily agree, momentum with the trend, price is at a level",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 83% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (1.0 pips away). A soft dollar (-0.25% DXY) is a headwind to the read.",
+  "confidence": 77,
+  "confidence_why": "4H and Daily agree, momentum with the trend",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 77% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (20.0 pips away). A firm dollar (+0.16% DXY) is a tailwind for the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.13954,
-    "ema21": 1.14072,
-    "ema55": 1.14561,
-    "rsi": 43.84919,
-    "atr": 0.00194,
+    "ema8": 1.13883,
+    "ema21": 1.14008,
+    "ema55": 1.14484,
+    "rsi": 38.34797,
+    "atr": 0.00183,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.14401,
-    "ema21": 1.15062,
-    "ema55": 1.15333,
+    "ema8": 1.14355,
+    "ema21": 1.15043,
+    "ema55": 1.15326,
     "trend": "BEARISH"
   },
-  "atr_pips": 19.4,
+  "atr_pips": 18.3,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -49.0
+      "dist_pips": -70.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": 1.0
+      "dist_pips": -20.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": 51.0
+      "dist_pips": 30.0
     }
   ],
   "nearest": {
     "name": "floor",
     "price": 1.14,
-    "dist_pips": 1.0
+    "dist_pips": -20.0
   },
-  "box_pos": 0.51,
+  "box_pos": 0.3,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
-    "trigger": true,
+    "trigger": false,
     "direction_aligned": true,
     "regime_ok": false
   },
   "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
-      "status": "go",
-      "read": "4H bearish (8/21/55 stack), price above the 8-EMA; choppy. RSI 43.8. Daily bias agrees. Nearest level 1.14 (1.0 pips). Trigger in play."
+      "status": "hold",
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; choppy. RSI 38.3. Daily bias agrees. Nearest level 1.14 (-20.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility dead/coiling (4H ATR ~19 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility dead/coiling (4H ATR ~18 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
