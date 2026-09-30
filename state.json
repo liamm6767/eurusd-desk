@@ -13,8 +13,8 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.13465,
-    "dist_ema8_pips": -11.5,
+    "ema8": 1.13456,
+    "dist_ema8_pips": -14.6,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
@@ -22,84 +22,84 @@
     {
       "name": "Evening star",
       "dir": "bearish",
-      "tier": "act",
-      "at_level": true,
+      "tier": "watch",
+      "at_level": false,
       "with_trend": true,
-      "note": "At a level with confluence \u2014 worth a plan. Wait for the candle to CLOSE, then size it with the trade plan."
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "22:47:58",
-  "updated_full": "Wed 30 Sep 2026 22:47 GST",
-  "price": 1.1335,
+  "updated": "23:08:24",
+  "updated_full": "Wed 30 Sep 2026 23:08 GST",
+  "price": 1.1331,
   "bias": "Bearish",
   "confidence": 94,
-  "confidence_why": "4H and Daily agree, momentum with the trend, volatility is expanding, price is at a level",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (15.0 pips away). A firm dollar (+0.07% DXY) is a tailwind for the read.",
+  "confidence_why": "4H and Daily agree, momentum with the trend, volatility is expanding",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (19.0 pips away). A firm dollar (+0.08% DXY) is a tailwind for the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.13465,
-    "ema21": 1.13621,
-    "ema55": 1.14081,
-    "rsi": 33.30844,
-    "atr": 0.00198,
+    "ema8": 1.13456,
+    "ema21": 1.13617,
+    "ema55": 1.14079,
+    "rsi": 32.19901,
+    "atr": 0.00201,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.14021,
-    "ema21": 1.14779,
-    "ema55": 1.152,
+    "ema8": 1.14012,
+    "ema21": 1.14776,
+    "ema55": 1.15198,
     "trend": "BEARISH"
   },
-  "atr_pips": 19.8,
+  "atr_pips": 20.1,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -115.0
+      "dist_pips": -119.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": -65.0
+      "dist_pips": -69.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": -15.0
+      "dist_pips": -19.0
     }
   ],
   "nearest": {
     "name": "hard_floor",
     "price": 1.135,
-    "dist_pips": -15.0
+    "dist_pips": -19.0
   },
-  "box_pos": -0.15,
+  "box_pos": -0.19,
   "regime": "RUNNING",
   "gate": {
-    "open": true,
-    "trigger": true,
+    "open": false,
+    "trigger": false,
     "direction_aligned": true,
     "regime_ok": true
   },
-  "verdict": "TRADE SETUP",
+  "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
-      "status": "go",
-      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 33.3. Daily bias agrees. Nearest level 1.135 (-15.0 pips). Trigger in play."
+      "status": "hold",
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 32.2. Daily bias agrees. Nearest level 1.135 (-19.0 pips). No trigger at a level yet."
     },
     "quant": {
-      "status": "go",
-      "read": "Volatility expanding (4H ATR ~20 pips). Edge worth measuring."
+      "status": "hold",
+      "read": "Volatility expanding (4H ATR ~20 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
-      "status": "hold",
-      "read": "Gate OPEN \u2014 a setup fits. Ready to size at 1%."
+      "status": "go",
+      "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
     },
     "trade": {
-      "status": "go",
-      "read": "Entry plan live."
+      "status": "idle",
+      "read": "On standby until a level and a clean trigger appear together."
     }
   },
   "source": "Yahoo EURUSD=X (free feed; ~1-2 pips off OANDA)"
