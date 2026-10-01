@@ -13,85 +13,69 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.13051,
-    "dist_ema8_pips": -77.1,
+    "ema8": 1.12922,
+    "dist_ema8_pips": -50.2,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
   "patterns": [
     {
-      "name": "Bearish engulfing",
-      "dir": "bearish",
-      "tier": "watch",
+      "name": "Inside bar",
+      "dir": "neutral",
+      "tier": "noise",
       "at_level": false,
-      "with_trend": true,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
-    },
-    {
-      "name": "Tweezer top",
-      "dir": "bearish",
-      "tier": "watch",
-      "at_level": false,
-      "with_trend": true,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
-    },
-    {
-      "name": "Expansion candle",
-      "dir": "bearish",
-      "tier": "watch",
-      "at_level": false,
-      "with_trend": true,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+      "with_trend": false,
+      "note": "A pattern with no level is just a candle. Ignore it."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "19:57:12",
-  "updated_full": "Thu 01 Oct 2026 19:57 GST",
-  "price": 1.1228,
+  "updated": "20:17:45",
+  "updated_full": "Thu 01 Oct 2026 20:17 GST",
+  "price": 1.1242,
   "bias": "Bearish",
   "confidence": 94,
   "confidence_why": "4H and Daily agree, momentum with the trend, volatility is expanding",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (122.0 pips away). A firm dollar (+0.56% DXY) is a tailwind for the read.",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (108.0 pips away). A firm dollar (+0.57% DXY) is a tailwind for the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.13051,
-    "ema21": 1.13369,
-    "ema55": 1.13898,
-    "rsi": 16.26493,
-    "atr": 0.00267,
+    "ema8": 1.12922,
+    "ema21": 1.13288,
+    "ema55": 1.13848,
+    "rsi": 20.36676,
+    "atr": 0.00253,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.13644,
-    "ema21": 1.14557,
-    "ema55": 1.15097,
+    "ema8": 1.13675,
+    "ema21": 1.14569,
+    "ema55": 1.15102,
     "trend": "BEARISH"
   },
-  "atr_pips": 26.7,
+  "atr_pips": 25.3,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -222.0
+      "dist_pips": -208.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": -172.0
+      "dist_pips": -158.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": -122.0
+      "dist_pips": -108.0
     }
   ],
   "nearest": {
     "name": "hard_floor",
     "price": 1.135,
-    "dist_pips": -122.0
+    "dist_pips": -108.0
   },
-  "box_pos": -1.22,
+  "box_pos": -1.08,
   "regime": "RUNNING",
   "gate": {
     "open": false,
@@ -103,11 +87,11 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 16.3. Daily bias agrees. Nearest level 1.135 (-122.0 pips). No trigger at a level yet."
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 20.4. Daily bias agrees. Nearest level 1.135 (-108.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility expanding (4H ATR ~27 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility expanding (4H ATR ~25 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
