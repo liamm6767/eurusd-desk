@@ -13,28 +13,12 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.1272,
-    "dist_ema8_pips": -8.0,
+    "ema8": 1.12714,
+    "dist_ema8_pips": -10.4,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
   "patterns": [
-    {
-      "name": "Doji",
-      "dir": "neutral",
-      "tier": "noise",
-      "at_level": false,
-      "with_trend": false,
-      "note": "A pattern with no level is just a candle. Ignore it."
-    },
-    {
-      "name": "Hammer / bullish pin",
-      "dir": "bullish",
-      "tier": "watch",
-      "at_level": false,
-      "with_trend": false,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
-    },
     {
       "name": "Shooting star / bearish pin",
       "dir": "bearish",
@@ -44,62 +28,62 @@
       "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     },
     {
-      "name": "Inside bar",
-      "dir": "neutral",
-      "tier": "noise",
+      "name": "Tweezer top",
+      "dir": "bearish",
+      "tier": "watch",
       "at_level": false,
-      "with_trend": false,
-      "note": "A pattern with no level is just a candle. Ignore it."
+      "with_trend": true,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "12:00:43",
-  "updated_full": "Fri 02 Oct 2026 12:00 GST",
-  "price": 1.1264,
+  "updated": "12:21:14",
+  "updated_full": "Fri 02 Oct 2026 12:21 GST",
+  "price": 1.1261,
   "bias": "Bearish",
   "confidence": 94,
   "confidence_why": "4H and Daily agree, momentum with the trend, volatility is expanding",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (86.0 pips away). A soft dollar (-0.22% DXY) is a headwind to the read.",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (89.0 pips away). A soft dollar (-0.29% DXY) is a headwind to the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.1272,
-    "ema21": 1.13069,
-    "ema55": 1.13678,
-    "rsi": 30.43996,
-    "atr": 0.00234,
+    "ema8": 1.12714,
+    "ema21": 1.13066,
+    "ema55": 1.13677,
+    "rsi": 29.94432,
+    "atr": 0.00241,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.13591,
-    "ema21": 1.14464,
+    "ema8": 1.13586,
+    "ema21": 1.14462,
     "ema55": 1.15043,
     "trend": "BEARISH"
   },
-  "atr_pips": 23.4,
+  "atr_pips": 24.1,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -186.0
+      "dist_pips": -189.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": -136.0
+      "dist_pips": -139.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": -86.0
+      "dist_pips": -89.0
     }
   ],
   "nearest": {
     "name": "hard_floor",
     "price": 1.135,
-    "dist_pips": -86.0
+    "dist_pips": -89.0
   },
-  "box_pos": -0.86,
+  "box_pos": -0.89,
   "regime": "RUNNING",
   "gate": {
     "open": false,
@@ -111,11 +95,11 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 30.4. Daily bias agrees. Nearest level 1.135 (-86.0 pips). No trigger at a level yet."
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 29.9. Daily bias agrees. Nearest level 1.135 (-89.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility expanding (4H ATR ~23 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility expanding (4H ATR ~24 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
