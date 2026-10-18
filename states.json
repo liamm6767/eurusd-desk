@@ -1,6 +1,6 @@
 {
-  "updated_full": "Sat 17 Oct 2026 20:35 GST",
-  "updated_epoch": 1792254912,
+  "updated_full": "Sun 18 Oct 2026 15:57 GST",
+  "updated_epoch": 1792324655,
   "order": [
     "eurusd",
     "gold",
@@ -28,23 +28,23 @@
       ],
       "setup": {
         "trend": "mixed",
-        "ema8": 1.12355,
-        "dist_ema8_pips": 6.5,
+        "ema8": 1.12352,
+        "dist_ema8_pips": 6.8,
         "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
         "plan": null
       },
       "patterns": [
         {
-          "name": "Doji",
-          "dir": "neutral",
+          "name": "Hammer / bullish pin",
+          "dir": "bullish",
           "tier": "noise",
           "at_level": false,
           "with_trend": false,
           "note": "A pattern with no level is just a candle. Ignore it."
         },
         {
-          "name": "Hammer / bullish pin",
-          "dir": "bullish",
+          "name": "Tweezer top",
+          "dir": "bearish",
           "tier": "noise",
           "at_level": false,
           "with_trend": false,
@@ -53,8 +53,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:34:45",
-      "updated_full": "Sat 17 Oct 2026 20:34 GST",
+      "updated": "15:57:14",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
       "price": 1.1242,
       "bias": "Neutral",
       "confidence": 48,
@@ -62,10 +62,10 @@
       "analysis": "EUR/USD is going sideways on the 4-hour, 48% conviction. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (108.0 pips away). Dollar soft today (-0.22% DXY).",
       "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
       "tf4": {
-        "ema8": 1.12355,
-        "ema21": 1.12196,
-        "ema55": 1.12261,
-        "rsi": 57.57231,
+        "ema8": 1.12352,
+        "ema21": 1.12195,
+        "ema55": 1.1226,
+        "rsi": 57.2874,
         "atr": 0.00253,
         "trend": "MIXED"
       },
@@ -110,7 +110,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H mixed (8/21/55 stack), price above the 8-EMA; running. RSI 57.6. Daily bias flat. Nearest level 1.135 (-108.0 pips). No trigger at a level yet."
+          "read": "4H mixed (8/21/55 stack), price above the 8-EMA; running. RSI 57.3. Daily bias flat. Nearest level 1.135 (-108.0 pips). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -183,8 +183,8 @@
         "atr_daily": 83.75
       },
       "timeframe": "Daily \u00b7 Trend + Re-Fire",
-      "updated": "20:34:48",
-      "updated_full": "Sat 17 Oct 2026 20:34 GST",
+      "updated": "15:57:16",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
       "price": 4181.1,
       "bias": "Bearish",
       "confidence": 62,
@@ -273,7 +273,7 @@
       "setup": {
         "trend": "up",
         "ema8": 1.33105,
-        "dist_ema8_pips": 19.5,
+        "dist_ema8_pips": 18.5,
         "waiting": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
         "plan": null
       },
@@ -289,13 +289,13 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:34:50",
-      "updated_full": "Sat 17 Oct 2026 20:34 GST",
-      "price": 1.333,
+      "updated": "15:57:18",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
+      "price": 1.3329,
       "bias": "Bullish",
       "confidence": 54,
       "confidence_why": "Daily bias is fighting the 4H, momentum with the trend",
-      "analysis": "GBP/USD is pushing up on the 4-hour, 54% conviction. But the Daily bias is against it \u2014 no trade until they line up. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (30.0 pips away). A soft dollar (-0.22% DXY) is a tailwind for the read.",
+      "analysis": "GBP/USD is pushing up on the 4-hour, 54% conviction. But the Daily bias is against it \u2014 no trade until they line up. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (29.0 pips away). A soft dollar (-0.22% DXY) is a tailwind for the read.",
       "watch": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree. (levels provisional \u2014 confirm on the chart)",
       "tf4": {
         "ema8": 1.33105,
@@ -306,7 +306,7 @@
         "trend": "BULLISH"
       },
       "daily": {
-        "ema8": 1.32641,
+        "ema8": 1.3264,
         "ema21": 1.32876,
         "ema55": 1.33606,
         "trend": "BEARISH"
@@ -316,25 +316,25 @@
         {
           "name": "ceiling",
           "price": 1.35,
-          "dist_pips": -170.0
+          "dist_pips": -171.0
         },
         {
           "name": "floor",
           "price": 1.33,
-          "dist_pips": 30.0
+          "dist_pips": 29.0
         },
         {
           "name": "hard_floor",
           "price": 1.32,
-          "dist_pips": 130.0
+          "dist_pips": 129.0
         }
       ],
       "nearest": {
         "name": "floor",
         "price": 1.33,
-        "dist_pips": 30.0
+        "dist_pips": 29.0
       },
-      "box_pos": 0.433,
+      "box_pos": 0.43,
       "regime": "CHOPPY",
       "gate": {
         "open": false,
@@ -346,7 +346,7 @@
       "desks": {
         "chartist": {
           "status": "hold",
-          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 65.8. Daily bias disagrees. Nearest level 1.33 (30.0 pips). No trigger at a level yet."
+          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 65.8. Daily bias disagrees. Nearest level 1.33 (29.0 pips). No trigger at a level yet."
         },
         "quant": {
           "status": "hold",
@@ -395,8 +395,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:34:54",
-      "updated_full": "Sat 17 Oct 2026 20:34 GST",
+      "updated": "15:57:20",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
       "price": 157.987,
       "bias": "Neutral",
       "confidence": 42,
@@ -509,8 +509,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:34:56",
-      "updated_full": "Sat 17 Oct 2026 20:34 GST",
+      "updated": "15:57:22",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
       "price": 177.1,
       "bias": "Neutral",
       "confidence": 48,
@@ -615,8 +615,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:34:58",
-      "updated_full": "Sat 17 Oct 2026 20:34 GST",
+      "updated": "15:57:24",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
       "price": 0.8236,
       "bias": "Bearish",
       "confidence": 66,
@@ -712,8 +712,8 @@
       "patterns": [],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:35:01",
-      "updated_full": "Sat 17 Oct 2026 20:35 GST",
+      "updated": "15:57:26",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
       "price": 1.4137,
       "bias": "Bearish",
       "confidence": 54,
@@ -834,8 +834,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:35:04",
-      "updated_full": "Sat 17 Oct 2026 20:35 GST",
+      "updated": "15:57:29",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
       "price": 0.6949,
       "bias": "Bearish",
       "confidence": 67,
@@ -940,8 +940,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:35:06",
-      "updated_full": "Sat 17 Oct 2026 20:35 GST",
+      "updated": "15:57:31",
+      "updated_full": "Sun 18 Oct 2026 15:57 GST",
       "price": 99.02,
       "bias": "Bullish",
       "confidence": 82,
@@ -957,9 +957,9 @@
         "trend": "BULLISH"
       },
       "daily": {
-        "ema8": 95.63,
-        "ema21": 93.84,
-        "ema55": 91.01,
+        "ema8": 95.1,
+        "ema21": 93.63,
+        "ema55": 90.92,
         "trend": "BULLISH"
       },
       "atr_pips": 1.2,
@@ -1090,7 +1090,7 @@
     }
   ],
   "context": {
-    "updated_full": "Sat 17 Oct 2026 20:34 GST",
+    "updated_full": "Sun 18 Oct 2026 15:57 GST",
     "gauges": {
       "dxy": {
         "name": "US Dollar Index (DXY)",
@@ -1131,7 +1131,80 @@
     }
   },
   "news": {
-    "calendar": [],
+    "calendar": [
+      {
+        "title": "CPI m/m",
+        "ccy": "CAD",
+        "impact": "High",
+        "when_gst": "Mon 16:30",
+        "mins_to": 1472,
+        "forecast": "0.2%",
+        "previous": "-0.1%"
+      },
+      {
+        "title": "Median CPI y/y",
+        "ccy": "CAD",
+        "impact": "High",
+        "when_gst": "Mon 16:30",
+        "mins_to": 1472,
+        "forecast": "2.0%",
+        "previous": "2.0%"
+      },
+      {
+        "title": "Trimmed CPI y/y",
+        "ccy": "CAD",
+        "impact": "High",
+        "when_gst": "Mon 16:30",
+        "mins_to": 1472,
+        "forecast": "1.9%",
+        "previous": "1.9%"
+      },
+      {
+        "title": "Common CPI y/y",
+        "ccy": "CAD",
+        "impact": "Medium",
+        "when_gst": "Mon 16:30",
+        "mins_to": 1472,
+        "forecast": "2.6%",
+        "previous": "2.6%"
+      },
+      {
+        "title": "Average Earnings Index 3m/y",
+        "ccy": "GBP",
+        "impact": "Medium",
+        "when_gst": "Tue 10:00",
+        "mins_to": 2522,
+        "forecast": "3.8%",
+        "previous": "3.9%"
+      },
+      {
+        "title": "CPI y/y",
+        "ccy": "GBP",
+        "impact": "High",
+        "when_gst": "Wed 10:00",
+        "mins_to": 3962,
+        "forecast": "3.4%",
+        "previous": "3.1%"
+      },
+      {
+        "title": "BOE Gov Bailey Speaks",
+        "ccy": "GBP",
+        "impact": "Medium",
+        "when_gst": "Wed 17:00",
+        "mins_to": 4382,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "Unemployment Claims",
+        "ccy": "USD",
+        "impact": "Medium",
+        "when_gst": "Thu 16:30",
+        "mins_to": 5792,
+        "forecast": "200K",
+        "previous": "199K"
+      }
+    ],
     "headlines": [
       {
         "title": "US Dollar Price Forecast: Warsh Holds Fire, DXY Tests 101.80 as EUR/USD, GBP/USD Gain",
@@ -1182,6 +1255,14 @@
         "market": "USD/JPY"
       },
       {
+        "title": "Foreign Holdings of US Treasuries Rise From Almost One-Year Low",
+        "link": "https://finance.yahoo.com/markets/currencies/articles/foreign-holdings-us-treasuries-rise-203728456.html?.tsrc=rss",
+        "pub": "Fri, 16 Oct 2026 20:37:28 +0000",
+        "strength": "minor",
+        "direction": "flat",
+        "market": "USD/JPY"
+      },
+      {
         "title": "Japan PPI unexpectedly eases in Sept on stronger yen, cooling oil",
         "link": "https://finance.yahoo.com/economy/policy/articles/japan-ppi-unexpectedly-eases-sept-003459586.html?.tsrc=rss",
         "pub": "Tue, 13 Oct 2026 00:34:59 +0000",
@@ -1204,17 +1285,9 @@
         "strength": "minor",
         "direction": "flat",
         "market": "USD/JPY"
-      },
-      {
-        "title": "Global Bond Turmoil Reveals the Surprising Resilience of Emerging Markets",
-        "link": "https://finance.yahoo.com/m/8c149a93-0f4c-3999-b872-b69e5cb690bb/global-bond-turmoil-reveals.html?.tsrc=rss",
-        "pub": "Thu, 08 Oct 2026 10:55:00 +0000",
-        "strength": "minor",
-        "direction": "flat",
-        "market": "USD/JPY"
       }
     ],
-    "updated_full": "Sat 17 Oct 2026 20:35 GST",
+    "updated_full": "Sun 18 Oct 2026 15:57 GST",
     "sources": "ForexFactory calendar \u00b7 Yahoo Finance headlines (free feeds)"
   }
 }
