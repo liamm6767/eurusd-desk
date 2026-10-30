@@ -13,14 +13,14 @@
   ],
   "setup": {
     "trend": "mixed",
-    "ema8": 1.11794,
-    "dist_ema8_pips": 17.6,
+    "ema8": 1.11835,
+    "dist_ema8_pips": 13.5,
     "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
     "plan": null
   },
   "patterns": [
     {
-      "name": "Doji",
+      "name": "Inside bar",
       "dir": "neutral",
       "tier": "noise",
       "at_level": false,
@@ -30,20 +30,20 @@
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "15:55:39",
-  "updated_full": "Fri 30 Oct 2026 15:55 GST",
+  "updated": "16:16:04",
+  "updated_full": "Fri 30 Oct 2026 16:16 GST",
   "price": 1.1197,
   "bias": "Neutral",
   "confidence": 48,
   "confidence_why": "the 4H EMAs are tangled \u2014 no clean trend",
-  "analysis": "EUR/USD is going sideways on the 4-hour, 48% conviction. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (153.0 pips away). Dollar soft today (-0.39% DXY).",
+  "analysis": "EUR/USD is going sideways on the 4-hour, 48% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: hard floor (153.0 pips away). Dollar soft today (-0.37% DXY).",
   "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
   "tf4": {
-    "ema8": 1.11794,
-    "ema21": 1.11711,
-    "ema55": 1.11861,
-    "rsi": 61.18333,
-    "atr": 0.0022,
+    "ema8": 1.11835,
+    "ema21": 1.11735,
+    "ema55": 1.11865,
+    "rsi": 60.89562,
+    "atr": 0.00207,
     "trend": "MIXED"
   },
   "daily": {
@@ -52,7 +52,7 @@
     "ema55": 1.13482,
     "trend": "BEARISH"
   },
-  "atr_pips": 22.0,
+  "atr_pips": 20.7,
   "levels": [
     {
       "name": "ceiling",
@@ -76,22 +76,22 @@
     "dist_pips": -153.0
   },
   "box_pos": -1.53,
-  "regime": "RUNNING",
+  "regime": "CHOPPY",
   "gate": {
     "open": false,
     "trigger": false,
     "direction_aligned": false,
-    "regime_ok": true
+    "regime_ok": false
   },
   "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H mixed (8/21/55 stack), price above the 8-EMA; running. RSI 61.2. Daily bias flat. Nearest level 1.135 (-153.0 pips). No trigger at a level yet."
+      "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 60.9. Daily bias flat. Nearest level 1.135 (-153.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility expanding (4H ATR ~22 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility dead/coiling (4H ATR ~21 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
