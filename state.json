@@ -13,12 +13,20 @@
   ],
   "setup": {
     "trend": "mixed",
-    "ema8": 1.11935,
-    "dist_ema8_pips": 27.5,
+    "ema8": 1.11924,
+    "dist_ema8_pips": 23.6,
     "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
     "plan": null
   },
   "patterns": [
+    {
+      "name": "Shooting star / bearish pin",
+      "dir": "bearish",
+      "tier": "watch",
+      "at_level": false,
+      "with_trend": false,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    },
     {
       "name": "Inside bar",
       "dir": "neutral",
@@ -30,26 +38,26 @@
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "17:58:21",
-  "updated_full": "Mon 02 Nov 2026 17:58 GST",
-  "price": 1.1221,
+  "updated": "18:18:45",
+  "updated_full": "Mon 02 Nov 2026 18:18 GST",
+  "price": 1.1216,
   "bias": "Neutral",
   "confidence": 48,
   "confidence_why": "the 4H EMAs are tangled \u2014 no clean trend",
-  "analysis": "EUR/USD is going sideways on the 4-hour, 48% conviction. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (129.0 pips away). Dollar soft today (-0.27% DXY).",
+  "analysis": "EUR/USD is going sideways on the 4-hour, 48% conviction. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (134.0 pips away). Dollar soft today (-0.25% DXY).",
   "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
   "tf4": {
-    "ema8": 1.11935,
-    "ema21": 1.11805,
-    "ema55": 1.11865,
-    "rsi": 65.09829,
+    "ema8": 1.11924,
+    "ema21": 1.118,
+    "ema55": 1.11863,
+    "rsi": 63.85837,
     "atr": 0.00245,
     "trend": "MIXED"
   },
   "daily": {
-    "ema8": 1.11924,
-    "ema21": 1.12319,
-    "ema55": 1.13431,
+    "ema8": 1.11912,
+    "ema21": 1.12314,
+    "ema55": 1.13429,
     "trend": "BEARISH"
   },
   "atr_pips": 24.5,
@@ -57,25 +65,25 @@
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -229.0
+      "dist_pips": -234.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": -179.0
+      "dist_pips": -184.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": -129.0
+      "dist_pips": -134.0
     }
   ],
   "nearest": {
     "name": "hard_floor",
     "price": 1.135,
-    "dist_pips": -129.0
+    "dist_pips": -134.0
   },
-  "box_pos": -1.29,
+  "box_pos": -1.34,
   "regime": "RUNNING",
   "gate": {
     "open": false,
@@ -87,7 +95,7 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H mixed (8/21/55 stack), price above the 8-EMA; running. RSI 65.1. Daily bias flat. Nearest level 1.135 (-129.0 pips). No trigger at a level yet."
+      "read": "4H mixed (8/21/55 stack), price above the 8-EMA; running. RSI 63.9. Daily bias flat. Nearest level 1.135 (-134.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
