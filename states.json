@@ -1,12 +1,13 @@
 {
-  "updated_full": "Sat 07 Nov 2026 16:58 GST",
-  "updated_epoch": 1794056323,
+  "updated_full": "Sat 07 Nov 2026 17:47 GST",
+  "updated_epoch": 1794059228,
   "order": [
     "eurusd",
     "gold",
     "gbpusd",
     "usdjpy",
     "eurjpy",
+    "usdchf",
     "usdcad",
     "audusd",
     "wti"
@@ -52,8 +53,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "16:30:28",
-      "updated_full": "Sat 07 Nov 2026 16:30 GST",
+      "updated": "17:46:42",
+      "updated_full": "Sat 07 Nov 2026 17:46 GST",
       "price": 1.1143,
       "bias": "Bearish",
       "confidence": 94,
@@ -174,8 +175,8 @@
         "atr_daily": 86.6
       },
       "timeframe": "Daily \u00b7 Trend + Re-Fire",
-      "updated": "16:30:30",
-      "updated_full": "Sat 07 Nov 2026 16:30 GST",
+      "updated": "17:46:44",
+      "updated_full": "Sat 07 Nov 2026 17:46 GST",
       "price": 4074.9,
       "bias": "Bearish",
       "confidence": 62,
@@ -288,8 +289,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "16:30:32",
-      "updated_full": "Sat 07 Nov 2026 16:30 GST",
+      "updated": "17:46:46",
+      "updated_full": "Sat 07 Nov 2026 17:46 GST",
       "price": 1.3356,
       "bias": "Neutral",
       "confidence": 42,
@@ -394,8 +395,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "16:30:35",
-      "updated_full": "Sat 07 Nov 2026 16:30 GST",
+      "updated": "17:46:49",
+      "updated_full": "Sat 07 Nov 2026 17:46 GST",
       "price": 158.425,
       "bias": "Bullish",
       "confidence": 61,
@@ -500,8 +501,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "16:30:38",
-      "updated_full": "Sat 07 Nov 2026 16:30 GST",
+      "updated": "17:46:52",
+      "updated_full": "Sat 07 Nov 2026 17:46 GST",
       "price": 176.34,
       "bias": "Neutral",
       "confidence": 48,
@@ -574,6 +575,120 @@
       },
       "source": "Yahoo EURJPY=X (free feed)"
     },
+    "usdchf": {
+      "inst": "usdchf",
+      "name": "USD/CHF",
+      "parked": false,
+      "macro_only": true,
+      "unit": "pips",
+      "dp": 5,
+      "pip_mult": 10000,
+      "pip_value": 0.1,
+      "box": [
+        0.79,
+        0.82
+      ],
+      "setup": {
+        "trend": "mixed",
+        "ema8": 0.8187,
+        "dist_ema8_pips": 13.0,
+        "waiting": "No clean 4H trend (EMAs tangled) \u2014 stand down.",
+        "plan": null
+      },
+      "patterns": [
+        {
+          "name": "Bearish engulfing",
+          "dir": "bearish",
+          "tier": "watch",
+          "at_level": true,
+          "with_trend": false,
+          "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+        },
+        {
+          "name": "Tweezer top",
+          "dir": "bearish",
+          "tier": "watch",
+          "at_level": true,
+          "with_trend": false,
+          "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+        }
+      ],
+      "strategy": null,
+      "timeframe": "4H entry \u00b7 Daily bias",
+      "updated": "17:46:54",
+      "updated_full": "Sat 07 Nov 2026 17:46 GST",
+      "price": 0.82,
+      "bias": "Neutral",
+      "confidence": 42,
+      "confidence_why": "the 4H EMAs are tangled \u2014 no clean trend",
+      "analysis": "USD/CHF is going sideways on the 4-hour, 42% conviction. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (0.0 pips away). Dollar firm today (+0.72% DXY).",
+      "watch": "No clean 4H trend (EMAs tangled) \u2014 stand down. (levels provisional \u2014 confirm on the chart)",
+      "tf4": {
+        "ema8": 0.8187,
+        "ema21": 0.81835,
+        "ema55": 0.82069,
+        "rsi": 53.78864,
+        "atr": 0.00288,
+        "trend": "MIXED"
+      },
+      "daily": {
+        "ema8": 0.82021,
+        "ema21": 0.8234,
+        "ema55": 0.82106,
+        "trend": "MIXED"
+      },
+      "atr_pips": 28.8,
+      "levels": [
+        {
+          "name": "ceiling",
+          "price": 0.82,
+          "dist_pips": 0.0
+        },
+        {
+          "name": "floor",
+          "price": 0.8,
+          "dist_pips": 200.0
+        },
+        {
+          "name": "hard_floor",
+          "price": 0.79,
+          "dist_pips": 300.0
+        }
+      ],
+      "nearest": {
+        "name": "ceiling",
+        "price": 0.82,
+        "dist_pips": 0.0
+      },
+      "box_pos": 1.0,
+      "regime": "CHOPPY",
+      "gate": {
+        "open": false,
+        "trigger": true,
+        "direction_aligned": false,
+        "regime_ok": false
+      },
+      "verdict": "NO TRADE \u2014 PATIENCE",
+      "desks": {
+        "chartist": {
+          "status": "hold",
+          "read": "4H mixed (8/21/55 stack), price above the 8-EMA; choppy. RSI 53.8. Daily bias flat. Nearest level 0.82 (0.0 pips). Trigger in play."
+        },
+        "quant": {
+          "status": "hold",
+          "read": "Volatility dead/coiling (4H ATR ~29 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+        },
+        "risk": {
+          "status": "go",
+          "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
+        },
+        "trade": {
+          "status": "idle",
+          "read": "On standby until a level and a clean trigger appear together."
+        }
+      },
+      "source": "Yahoo CHF=X (USD/CHF, free feed)"
+    },
     "usdcad": {
       "inst": "usdcad",
       "name": "USD/CAD",
@@ -614,8 +729,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "16:58:30",
-      "updated_full": "Sat 07 Nov 2026 16:58 GST",
+      "updated": "17:46:56",
+      "updated_full": "Sat 07 Nov 2026 17:46 GST",
       "price": 1.4128,
       "bias": "Bullish",
       "confidence": 66,
@@ -736,8 +851,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "16:58:33",
-      "updated_full": "Sat 07 Nov 2026 16:58 GST",
+      "updated": "17:46:59",
+      "updated_full": "Sat 07 Nov 2026 17:46 GST",
       "price": 0.6868,
       "bias": "Bearish",
       "confidence": 82,
@@ -850,8 +965,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "16:58:36",
-      "updated_full": "Sat 07 Nov 2026 16:58 GST",
+      "updated": "17:47:02",
+      "updated_full": "Sat 07 Nov 2026 17:47 GST",
       "price": 90.83,
       "bias": "Bearish",
       "confidence": 73,
@@ -995,7 +1110,7 @@
     }
   ],
   "context": {
-    "updated_full": "Sat 07 Nov 2026 16:30 GST",
+    "updated_full": "Sat 07 Nov 2026 17:46 GST",
     "gauges": {
       "dxy": {
         "name": "US Dollar Index (DXY)",
@@ -1119,7 +1234,7 @@
         "market": "USD/JPY"
       }
     ],
-    "updated_full": "Sat 07 Nov 2026 16:58 GST",
+    "updated_full": "Sat 07 Nov 2026 17:47 GST",
     "sources": "ForexFactory calendar \u00b7 Yahoo Finance headlines (free feeds)"
   }
 }
