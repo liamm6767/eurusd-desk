@@ -1,14 +1,14 @@
 {
-  "updated_full": "Sat 07 Nov 2026 21:06 GST",
-  "updated_epoch": 1794071175,
+  "updated_full": "Sun 08 Nov 2026 18:03 GST",
+  "updated_epoch": 1794146583,
   "order": [
     "eurusd",
     "gold",
     "gbpusd",
-    "usdjpy",
     "eurjpy",
     "usdchf",
     "usdcad",
+    "audusd",
     "wti"
   ],
   "instruments": {
@@ -52,8 +52,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:32:23",
-      "updated_full": "Sat 07 Nov 2026 20:32 GST",
+      "updated": "17:30:42",
+      "updated_full": "Sun 08 Nov 2026 17:30 GST",
       "price": 1.1143,
       "bias": "Bearish",
       "confidence": 94,
@@ -174,8 +174,8 @@
         "atr_daily": 86.6
       },
       "timeframe": "Daily \u00b7 Trend + Re-Fire",
-      "updated": "20:32:26",
-      "updated_full": "Sat 07 Nov 2026 20:32 GST",
+      "updated": "17:30:45",
+      "updated_full": "Sun 08 Nov 2026 17:30 GST",
       "price": 4074.9,
       "bias": "Bearish",
       "confidence": 62,
@@ -288,8 +288,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:32:30",
-      "updated_full": "Sat 07 Nov 2026 20:32 GST",
+      "updated": "17:30:49",
+      "updated_full": "Sun 08 Nov 2026 17:30 GST",
       "price": 1.3356,
       "bias": "Neutral",
       "confidence": 42,
@@ -362,112 +362,6 @@
       },
       "source": "Yahoo GBPUSD=X (free feed)"
     },
-    "usdjpy": {
-      "inst": "usdjpy",
-      "name": "USD/JPY",
-      "parked": false,
-      "macro_only": true,
-      "unit": "pips",
-      "dp": 3,
-      "pip_mult": 100,
-      "pip_value": 0.1,
-      "box": [
-        158.0,
-        165.0
-      ],
-      "setup": {
-        "trend": "up",
-        "ema8": 158.218,
-        "dist_ema8_pips": 20.7,
-        "waiting": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree.",
-        "plan": null
-      },
-      "patterns": [
-        {
-          "name": "Tweezer top",
-          "dir": "bearish",
-          "tier": "noise",
-          "at_level": false,
-          "with_trend": false,
-          "note": "A pattern with no level is just a candle. Ignore it."
-        }
-      ],
-      "strategy": null,
-      "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:32:33",
-      "updated_full": "Sat 07 Nov 2026 20:32 GST",
-      "price": 158.425,
-      "bias": "Bullish",
-      "confidence": 61,
-      "confidence_why": "Daily bias still flat, momentum with the trend",
-      "analysis": "USD/JPY is pushing up on the 4-hour, 61% conviction. Daily bias still flat. Volatility is quiet \u2014 coiled and choppy. Nearest structure: hard floor (42.5 pips away). A firm dollar (+0.72% DXY) is a tailwind for the read.",
-      "watch": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree. (levels provisional \u2014 confirm on the chart)",
-      "tf4": {
-        "ema8": 158.218,
-        "ema21": 158.119,
-        "ema55": 157.981,
-        "rsi": 55.737,
-        "atr": 0.466,
-        "trend": "BULLISH"
-      },
-      "daily": {
-        "ema8": 158.016,
-        "ema21": 157.882,
-        "ema55": 158.005,
-        "trend": "MIXED"
-      },
-      "atr_pips": 46.6,
-      "levels": [
-        {
-          "name": "ceiling",
-          "price": 165.0,
-          "dist_pips": -657.5
-        },
-        {
-          "name": "floor",
-          "price": 160.0,
-          "dist_pips": -157.5
-        },
-        {
-          "name": "hard_floor",
-          "price": 158.0,
-          "dist_pips": 42.5
-        }
-      ],
-      "nearest": {
-        "name": "hard_floor",
-        "price": 158.0,
-        "dist_pips": 42.5
-      },
-      "box_pos": 0.061,
-      "regime": "CHOPPY",
-      "gate": {
-        "open": false,
-        "trigger": false,
-        "direction_aligned": false,
-        "regime_ok": false
-      },
-      "verdict": "NO TRADE \u2014 PATIENCE",
-      "desks": {
-        "chartist": {
-          "status": "hold",
-          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 55.7. Daily bias flat. Nearest level 158.0 (42.5 pips). No trigger at a level yet."
-        },
-        "quant": {
-          "status": "hold",
-          "read": "Volatility dead/coiling (4H ATR ~47 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
-        },
-        "risk": {
-          "status": "go",
-          "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
-        },
-        "trade": {
-          "status": "idle",
-          "read": "On standby until a level and a clean trigger appear together."
-        }
-      },
-      "source": "Yahoo JPY=X (USD/JPY, free feed)"
-    },
     "eurjpy": {
       "inst": "eurjpy",
       "name": "EUR/JPY",
@@ -500,8 +394,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:32:37",
-      "updated_full": "Sat 07 Nov 2026 20:32 GST",
+      "updated": "18:02:42",
+      "updated_full": "Sun 08 Nov 2026 18:02 GST",
       "price": 176.34,
       "bias": "Neutral",
       "confidence": 48,
@@ -614,8 +508,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:32:39",
-      "updated_full": "Sat 07 Nov 2026 20:32 GST",
+      "updated": "18:02:45",
+      "updated_full": "Sun 08 Nov 2026 18:02 GST",
       "price": 0.82,
       "bias": "Neutral",
       "confidence": 42,
@@ -728,8 +622,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "20:32:42",
-      "updated_full": "Sat 07 Nov 2026 20:32 GST",
+      "updated": "18:02:48",
+      "updated_full": "Sun 08 Nov 2026 18:02 GST",
       "price": 1.4128,
       "bias": "Bullish",
       "confidence": 66,
@@ -802,6 +696,128 @@
       },
       "source": "Yahoo CAD=X (USD/CAD, free feed)"
     },
+    "audusd": {
+      "inst": "audusd",
+      "name": "AUD/USD",
+      "parked": false,
+      "macro_only": true,
+      "unit": "pips",
+      "dp": 5,
+      "pip_mult": 10000,
+      "pip_value": 0.1,
+      "box": [
+        0.68,
+        0.7
+      ],
+      "setup": {
+        "trend": "down",
+        "ema8": 0.68965,
+        "dist_ema8_pips": -28.5,
+        "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
+        "plan": null
+      },
+      "patterns": [
+        {
+          "name": "Spinning top",
+          "dir": "neutral",
+          "tier": "noise",
+          "at_level": false,
+          "with_trend": false,
+          "note": "A pattern with no level is just a candle. Ignore it."
+        },
+        {
+          "name": "Inside bar",
+          "dir": "neutral",
+          "tier": "noise",
+          "at_level": false,
+          "with_trend": false,
+          "note": "A pattern with no level is just a candle. Ignore it."
+        },
+        {
+          "name": "Tweezer bottom",
+          "dir": "bullish",
+          "tier": "watch",
+          "at_level": false,
+          "with_trend": false,
+          "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+        }
+      ],
+      "strategy": null,
+      "timeframe": "4H entry \u00b7 Daily bias",
+      "updated": "18:02:51",
+      "updated_full": "Sun 08 Nov 2026 18:02 GST",
+      "price": 0.6868,
+      "bias": "Bearish",
+      "confidence": 82,
+      "confidence_why": "4H and Daily agree, momentum with the trend",
+      "analysis": "AUD/USD is leaning down on the 4-hour, 82% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: floor (32.0 pips away). A firm dollar (+0.72% DXY) is a tailwind for the read.",
+      "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short. (levels provisional \u2014 confirm on the chart)",
+      "tf4": {
+        "ema8": 0.68965,
+        "ema21": 0.69417,
+        "ema55": 0.698,
+        "rsi": 20.17553,
+        "atr": 0.00228,
+        "trend": "BEARISH"
+      },
+      "daily": {
+        "ema8": 0.6963,
+        "ema21": 0.69902,
+        "ema55": 0.70217,
+        "trend": "BEARISH"
+      },
+      "atr_pips": 22.8,
+      "levels": [
+        {
+          "name": "ceiling",
+          "price": 0.7,
+          "dist_pips": -132.0
+        },
+        {
+          "name": "floor",
+          "price": 0.69,
+          "dist_pips": -32.0
+        },
+        {
+          "name": "hard_floor",
+          "price": 0.68,
+          "dist_pips": 68.0
+        }
+      ],
+      "nearest": {
+        "name": "floor",
+        "price": 0.69,
+        "dist_pips": -32.0
+      },
+      "box_pos": 0.34,
+      "regime": "CHOPPY",
+      "gate": {
+        "open": false,
+        "trigger": false,
+        "direction_aligned": true,
+        "regime_ok": false
+      },
+      "verdict": "NO TRADE \u2014 PATIENCE",
+      "desks": {
+        "chartist": {
+          "status": "hold",
+          "read": "4H bearish (8/21/55 stack), price under the 8-EMA; choppy. RSI 20.2. Daily bias agrees. Nearest level 0.69 (-32.0 pips). No trigger at a level yet."
+        },
+        "quant": {
+          "status": "hold",
+          "read": "Volatility dead/coiling (4H ATR ~23 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+        },
+        "risk": {
+          "status": "go",
+          "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
+        },
+        "trade": {
+          "status": "idle",
+          "read": "On standby until a level and a clean trigger appear together."
+        }
+      },
+      "source": "Yahoo AUDUSD=X (free feed)"
+    },
     "wti": {
       "inst": "wti",
       "name": "US Oil \u00b7 WTI",
@@ -842,8 +858,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "21:06:08",
-      "updated_full": "Sat 07 Nov 2026 21:06 GST",
+      "updated": "18:02:54",
+      "updated_full": "Sun 08 Nov 2026 18:02 GST",
       "price": 90.83,
       "bias": "Bearish",
       "confidence": 73,
@@ -930,6 +946,17 @@
       "note": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short."
     },
     {
+      "key": "audusd",
+      "market": "AUD/USD",
+      "unit": "pips",
+      "confidence": 82,
+      "bias": "Bearish",
+      "provisional": true,
+      "tier": "forming",
+      "dir": "short",
+      "note": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short."
+    },
+    {
       "key": "wti",
       "market": "US Oil \u00b7 WTI",
       "unit": "pts",
@@ -962,21 +989,10 @@
       "tier": "forming",
       "dir": "short",
       "note": "Downtrend (below the 200-EMA) but momentum is up \u2014 wait for the MACD to cross back down."
-    },
-    {
-      "key": "usdjpy",
-      "market": "USD/JPY",
-      "unit": "pips",
-      "confidence": 61,
-      "bias": "Bullish",
-      "provisional": true,
-      "tier": "forming",
-      "dir": "long",
-      "note": "4H uptrend, but the Daily bias isn't up yet \u2014 stand aside until they agree."
     }
   ],
   "context": {
-    "updated_full": "Sat 07 Nov 2026 20:32 GST",
+    "updated_full": "Sun 08 Nov 2026 17:30 GST",
     "gauges": {
       "dxy": {
         "name": "US Dollar Index (DXY)",
@@ -1017,7 +1033,80 @@
     }
   },
   "news": {
-    "calendar": [],
+    "calendar": [
+      {
+        "title": "BOE Gov Bailey Speaks",
+        "ccy": "GBP",
+        "impact": "Medium",
+        "when_gst": "Mon 21:25",
+        "mins_to": 1642,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "FOMC Member Waller Speaks",
+        "ccy": "USD",
+        "impact": "Medium",
+        "when_gst": "Tue 13:00",
+        "mins_to": 2577,
+        "forecast": "",
+        "previous": ""
+      },
+      {
+        "title": "Core CPI m/m",
+        "ccy": "USD",
+        "impact": "High",
+        "when_gst": "Tue 17:30",
+        "mins_to": 2847,
+        "forecast": "0.2%",
+        "previous": "0.3%"
+      },
+      {
+        "title": "CPI m/m",
+        "ccy": "USD",
+        "impact": "High",
+        "when_gst": "Tue 17:30",
+        "mins_to": 2847,
+        "forecast": "0.3%",
+        "previous": "0.6%"
+      },
+      {
+        "title": "GDP m/m",
+        "ccy": "GBP",
+        "impact": "High",
+        "when_gst": "Thu 11:00",
+        "mins_to": 5337,
+        "forecast": "0.0%",
+        "previous": "0.1%"
+      },
+      {
+        "title": "Prelim GDP q/q",
+        "ccy": "GBP",
+        "impact": "Medium",
+        "when_gst": "Thu 11:00",
+        "mins_to": 5337,
+        "forecast": "0.7%",
+        "previous": "0.5%"
+      },
+      {
+        "title": "Unemployment Claims",
+        "ccy": "USD",
+        "impact": "Medium",
+        "when_gst": "Thu 17:30",
+        "mins_to": 5727,
+        "forecast": "194K",
+        "previous": "189K"
+      },
+      {
+        "title": "ECB President Lagarde Speaks",
+        "ccy": "EUR",
+        "impact": "Medium",
+        "when_gst": "Thu 23:30",
+        "mins_to": 6087,
+        "forecast": "",
+        "previous": ""
+      }
+    ],
     "headlines": [
       {
         "title": "US Dollar Price Forecast: DXY Eyes 102.08 as EUR/USD, GBP/USD Await US NFP",
@@ -1100,7 +1189,7 @@
         "market": "USD/JPY"
       }
     ],
-    "updated_full": "Sat 07 Nov 2026 21:06 GST",
+    "updated_full": "Sun 08 Nov 2026 18:02 GST",
     "sources": "ForexFactory calendar \u00b7 Yahoo Finance headlines (free feeds)"
   }
 }
