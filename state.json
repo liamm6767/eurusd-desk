@@ -13,69 +13,69 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.11112,
-    "dist_ema8_pips": -29.2,
+    "ema8": 1.11075,
+    "dist_ema8_pips": -18.5,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
   "patterns": [
     {
-      "name": "Inside bar",
-      "dir": "neutral",
-      "tier": "noise",
+      "name": "Tweezer top",
+      "dir": "bearish",
+      "tier": "watch",
       "at_level": false,
-      "with_trend": false,
-      "note": "A pattern with no level is just a candle. Ignore it."
+      "with_trend": true,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "11:40:44",
-  "updated_full": "Thu 12 Nov 2026 11:40 GST",
-  "price": 1.1082,
+  "updated": "12:01:38",
+  "updated_full": "Thu 12 Nov 2026 12:01 GST",
+  "price": 1.1089,
   "bias": "Bearish",
   "confidence": 82,
   "confidence_why": "4H and Daily agree, momentum with the trend",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 82% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: hard floor (268.0 pips away). A firm dollar (+0.10% DXY) is a tailwind for the read.",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 82% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: hard floor (261.0 pips away). A firm dollar (+0.01% DXY) is a tailwind for the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.11112,
-    "ema21": 1.11492,
-    "ema55": 1.11761,
-    "rsi": 28.71448,
-    "atr": 0.00238,
+    "ema8": 1.11075,
+    "ema21": 1.11443,
+    "ema55": 1.11733,
+    "rsi": 31.33616,
+    "atr": 0.00225,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.11675,
-    "ema21": 1.12006,
-    "ema55": 1.13009,
+    "ema8": 1.11691,
+    "ema21": 1.12013,
+    "ema55": 1.13012,
     "trend": "BEARISH"
   },
-  "atr_pips": 23.8,
+  "atr_pips": 22.5,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -368.0
+      "dist_pips": -361.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": -318.0
+      "dist_pips": -311.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": -268.0
+      "dist_pips": -261.0
     }
   ],
   "nearest": {
     "name": "hard_floor",
     "price": 1.135,
-    "dist_pips": -268.0
+    "dist_pips": -261.0
   },
-  "box_pos": -2.68,
+  "box_pos": -2.61,
   "regime": "CHOPPY",
   "gate": {
     "open": false,
@@ -87,11 +87,11 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; choppy. RSI 28.7. Daily bias agrees. Nearest level 1.135 (-268.0 pips). No trigger at a level yet."
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; choppy. RSI 31.3. Daily bias agrees. Nearest level 1.135 (-261.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility dead/coiling (4H ATR ~24 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility dead/coiling (4H ATR ~22 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
