@@ -1,12 +1,13 @@
 {
-  "updated_full": "Sat 14 Nov 2026 15:26 GST",
-  "updated_epoch": 1794655561,
+  "updated_full": "Sat 14 Nov 2026 17:44 GST",
+  "updated_epoch": 1794663876,
   "order": [
     "eurusd",
     "gold",
     "gbpusd",
     "usdjpy",
     "eurjpy",
+    "usdchf",
     "usdcad",
     "audusd",
     "wti"
@@ -44,8 +45,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "14:25:05",
-      "updated_full": "Sat 14 Nov 2026 14:25 GST",
+      "updated": "17:43:59",
+      "updated_full": "Sat 14 Nov 2026 17:43 GST",
       "price": 1.1028,
       "bias": "Bearish",
       "confidence": 82,
@@ -164,8 +165,8 @@
         "atr_daily": 91.73
       },
       "timeframe": "Daily \u00b7 Trend + Re-Fire",
-      "updated": "14:25:09",
-      "updated_full": "Sat 14 Nov 2026 14:25 GST",
+      "updated": "17:44:05",
+      "updated_full": "Sat 14 Nov 2026 17:44 GST",
       "price": 3886.3,
       "bias": "Bearish",
       "confidence": 88,
@@ -278,8 +279,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "14:25:12",
-      "updated_full": "Sat 14 Nov 2026 14:25 GST",
+      "updated": "17:44:08",
+      "updated_full": "Sat 14 Nov 2026 17:44 GST",
       "price": 1.3209,
       "bias": "Bearish",
       "confidence": 88,
@@ -384,8 +385,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "14:25:17",
-      "updated_full": "Sat 14 Nov 2026 14:25 GST",
+      "updated": "17:44:11",
+      "updated_full": "Sat 14 Nov 2026 17:44 GST",
       "price": 159.686,
       "bias": "Bullish",
       "confidence": 77,
@@ -481,8 +482,8 @@
       "patterns": [],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "14:25:22",
-      "updated_full": "Sat 14 Nov 2026 14:25 GST",
+      "updated": "17:44:14",
+      "updated_full": "Sat 14 Nov 2026 17:44 GST",
       "price": 175.986,
       "bias": "Bearish",
       "confidence": 82,
@@ -555,6 +556,112 @@
       },
       "source": "Yahoo EURJPY=X (free feed)"
     },
+    "usdchf": {
+      "inst": "usdchf",
+      "name": "USD/CHF",
+      "parked": false,
+      "macro_only": true,
+      "unit": "pips",
+      "dp": 5,
+      "pip_mult": 10000,
+      "pip_value": 0.1,
+      "box": [
+        0.79,
+        0.82
+      ],
+      "setup": {
+        "trend": "up",
+        "ema8": 0.83684,
+        "dist_ema8_pips": 13.6,
+        "waiting": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long.",
+        "plan": null
+      },
+      "patterns": [
+        {
+          "name": "Tweezer top",
+          "dir": "bearish",
+          "tier": "watch",
+          "at_level": false,
+          "with_trend": false,
+          "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+        }
+      ],
+      "strategy": null,
+      "timeframe": "4H entry \u00b7 Daily bias",
+      "updated": "17:44:18",
+      "updated_full": "Sat 14 Nov 2026 17:44 GST",
+      "price": 0.8382,
+      "bias": "Bullish",
+      "confidence": 82,
+      "confidence_why": "4H and Daily agree, momentum with the trend",
+      "analysis": "USD/CHF is pushing up on the 4-hour, 82% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: ceiling (182.0 pips away). A firm dollar (+0.23% DXY) is a tailwind for the read.",
+      "watch": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long. (levels provisional \u2014 confirm on the chart)",
+      "tf4": {
+        "ema8": 0.83684,
+        "ema21": 0.83268,
+        "ema55": 0.82738,
+        "rsi": 71.59027,
+        "atr": 0.0023,
+        "trend": "BULLISH"
+      },
+      "daily": {
+        "ema8": 0.82894,
+        "ema21": 0.82609,
+        "ema55": 0.82258,
+        "trend": "BULLISH"
+      },
+      "atr_pips": 23.0,
+      "levels": [
+        {
+          "name": "ceiling",
+          "price": 0.82,
+          "dist_pips": 182.0
+        },
+        {
+          "name": "floor",
+          "price": 0.8,
+          "dist_pips": 382.0
+        },
+        {
+          "name": "hard_floor",
+          "price": 0.79,
+          "dist_pips": 482.0
+        }
+      ],
+      "nearest": {
+        "name": "ceiling",
+        "price": 0.82,
+        "dist_pips": 182.0
+      },
+      "box_pos": 1.607,
+      "regime": "CHOPPY",
+      "gate": {
+        "open": false,
+        "trigger": false,
+        "direction_aligned": true,
+        "regime_ok": false
+      },
+      "verdict": "NO TRADE \u2014 PATIENCE",
+      "desks": {
+        "chartist": {
+          "status": "hold",
+          "read": "4H bullish (8/21/55 stack), price above the 8-EMA; choppy. RSI 71.6. Daily bias agrees. Nearest level 0.82 (182.0 pips). No trigger at a level yet."
+        },
+        "quant": {
+          "status": "hold",
+          "read": "Volatility dead/coiling (4H ATR ~23 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+        },
+        "risk": {
+          "status": "go",
+          "read": "Gate CLOSED. Nothing fits the 1% rule right now \u2014 the veto holds, capital protected."
+        },
+        "trade": {
+          "status": "idle",
+          "read": "On standby until a level and a clean trigger appear together."
+        }
+      },
+      "source": "Yahoo CHF=X (USD/CHF, free feed)"
+    },
     "usdcad": {
       "inst": "usdcad",
       "name": "USD/CAD",
@@ -587,8 +694,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "15:14:54",
-      "updated_full": "Sat 14 Nov 2026 15:14 GST",
+      "updated": "17:44:22",
+      "updated_full": "Sat 14 Nov 2026 17:44 GST",
       "price": 1.4269,
       "bias": "Bullish",
       "confidence": 82,
@@ -693,8 +800,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "15:14:58",
-      "updated_full": "Sat 14 Nov 2026 15:14 GST",
+      "updated": "17:44:25",
+      "updated_full": "Sat 14 Nov 2026 17:44 GST",
       "price": 0.6774,
       "bias": "Bearish",
       "confidence": 82,
@@ -807,8 +914,8 @@
       ],
       "strategy": null,
       "timeframe": "4H entry \u00b7 Daily bias",
-      "updated": "15:15:02",
-      "updated_full": "Sat 14 Nov 2026 15:15 GST",
+      "updated": "17:44:28",
+      "updated_full": "Sat 14 Nov 2026 17:44 GST",
       "price": 88.56,
       "bias": "Neutral",
       "confidence": 42,
@@ -934,6 +1041,17 @@
       "note": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short."
     },
     {
+      "key": "usdchf",
+      "market": "USD/CHF",
+      "unit": "pips",
+      "confidence": 82,
+      "bias": "Bullish",
+      "provisional": true,
+      "tier": "forming",
+      "dir": "long",
+      "note": "Uptrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go long."
+    },
+    {
       "key": "usdcad",
       "market": "USD/CAD",
       "unit": "pips",
@@ -968,7 +1086,7 @@
     }
   ],
   "context": {
-    "updated_full": "Sat 14 Nov 2026 14:25 GST",
+    "updated_full": "Sat 14 Nov 2026 17:43 GST",
     "gauges": {
       "dxy": {
         "name": "US Dollar Index (DXY)",
@@ -1052,47 +1170,47 @@
         "market": "EUR/USD"
       },
       {
-        "title": "Hemlo Mining Corp (HMMCF) (Q3 2026) Earnings Call Highlights: Record Cash Position, Strong Gold ...",
-        "link": "https://finance.yahoo.com/markets/commodities/articles/hemlo-mining-corp-hmmcf-q3-010210603.html?.tsrc=rss",
-        "pub": "Sat, 14 Nov 2026 01:02:10 +0000",
+        "title": "BC-Nikkei 225 Futures",
+        "link": "https://finance.yahoo.com/markets/world-indices/articles/bc-nikkei-225-futures-233013848.html?.tsrc=rss",
+        "pub": "Fri, 13 Nov 2026 23:30:13 +0000",
+        "strength": "minor",
+        "direction": "flat",
+        "market": "USD/JPY"
+      },
+      {
+        "title": "Washington Spent $497 Million Propping Up the Japanese Yen in July",
+        "link": "https://247wallst.com/investing/2026/11/13/washington-spent-497-million-propping-up-the-japanese-yen-in-july/?.tsrc=rss",
+        "pub": "Fri, 13 Nov 2026 15:36:51 +0000",
+        "strength": "minor",
+        "direction": "flat",
+        "market": "USD/JPY"
+      },
+      {
+        "title": "Daiichi Life Group Inc (DCNSF) (Q2 2027) Earnings Call Highlights: Adjusted Profit Jumps 33% as ...",
+        "link": "https://finance.yahoo.com/markets/stocks/articles/daiichi-life-group-inc-dcnsf-150134035.html?.tsrc=rss",
+        "pub": "Fri, 13 Nov 2026 15:01:34 +0000",
         "strength": "minor",
         "direction": "up",
-        "market": "Gold"
+        "market": "USD/JPY"
       },
       {
-        "title": "STARCORE Reports Second Quarter Production Results",
-        "link": "https://finance.yahoo.com/markets/commodities/articles/starcore-reports-second-quarter-production-002000231.html?.tsrc=rss",
-        "pub": "Sat, 14 Nov 2026 00:20:00 +0000",
+        "title": "Update: Mizuho Financial Shares Rise After Posting Higher Fiscal H1 Earnings, Ordinary Income",
+        "link": "https://finance.yahoo.com/markets/stocks/articles/mizuho-financial-shares-rise-posting-144907472.html?.tsrc=rss",
+        "pub": "Fri, 13 Nov 2026 14:49:07 +0000",
         "strength": "minor",
         "direction": "flat",
-        "market": "Gold"
+        "market": "USD/JPY"
       },
       {
-        "title": "Asante Reports Q3 2026 Operating &amp; Financial Results and Issues Clarification Regarding November 12, 2026 Press Release",
-        "link": "https://finance.yahoo.com/markets/commodities/articles/asante-reports-q3-2026-operating-231800978.html?.tsrc=rss",
-        "pub": "Fri, 13 Nov 2026 23:18:00 +0000",
+        "title": "Japanese yen tests 160 again, drawing intervention threats",
+        "link": "https://finance.yahoo.com/markets/currencies/articles/japanese-yen-tests-160-again-032528721.html?.tsrc=rss",
+        "pub": "Fri, 13 Nov 2026 03:25:28 +0000",
         "strength": "minor",
         "direction": "flat",
-        "market": "Gold"
-      },
-      {
-        "title": "Strong Dollar, Rate Hike Bets Weigh on Gold This Year, But Commodity Strategists Bullish Long Term",
-        "link": "https://finance.yahoo.com/markets/commodities/articles/strong-dollar-rate-hike-bets-213244314.html?.tsrc=rss",
-        "pub": "Fri, 13 Nov 2026 21:32:44 +0000",
-        "strength": "minor",
-        "direction": "up",
-        "market": "Gold"
-      },
-      {
-        "title": "Churchill Resources Announces Change in Chief Financial Officer",
-        "link": "https://finance.yahoo.com/markets/stocks/articles/churchill-resources-announces-change-chief-213000553.html?.tsrc=rss",
-        "pub": "Fri, 13 Nov 2026 21:30:00 +0000",
-        "strength": "minor",
-        "direction": "flat",
-        "market": "Gold"
+        "market": "USD/JPY"
       }
     ],
-    "updated_full": "Sat 14 Nov 2026 15:15 GST",
+    "updated_full": "Sat 14 Nov 2026 17:44 GST",
     "sources": "ForexFactory calendar \u00b7 Yahoo Finance headlines (free feeds)"
   }
 }
