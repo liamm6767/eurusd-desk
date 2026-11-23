@@ -13,60 +13,69 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.09717,
-    "dist_ema8_pips": -24.7,
+    "ema8": 1.0969,
+    "dist_ema8_pips": -34.0,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
-  "patterns": [],
+  "patterns": [
+    {
+      "name": "Expansion candle",
+      "dir": "bearish",
+      "tier": "watch",
+      "at_level": false,
+      "with_trend": true,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    }
+  ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "17:36:56",
-  "updated_full": "Mon 23 Nov 2026 17:36 GST",
-  "price": 1.0947,
+  "updated": "17:57:22",
+  "updated_full": "Mon 23 Nov 2026 17:57 GST",
+  "price": 1.0935,
   "bias": "Bearish",
   "confidence": 89,
   "confidence_why": "4H and Daily agree, momentum with the trend, volatility is expanding",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 89% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (403.0 pips away). A firm dollar (+0.24% DXY) is a tailwind for the read.",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 89% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (415.0 pips away). A firm dollar (+0.28% DXY) is a tailwind for the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.09717,
-    "ema21": 1.0982,
-    "ema55": 1.10281,
-    "rsi": 37.7517,
-    "atr": 0.00236,
+    "ema8": 1.0969,
+    "ema21": 1.09809,
+    "ema55": 1.10277,
+    "rsi": 35.46272,
+    "atr": 0.00251,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.10117,
-    "ema21": 1.10975,
-    "ema55": 1.12317,
+    "ema8": 1.10091,
+    "ema21": 1.10965,
+    "ema55": 1.12313,
     "trend": "BEARISH"
   },
-  "atr_pips": 23.6,
+  "atr_pips": 25.1,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -503.0
+      "dist_pips": -515.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": -453.0
+      "dist_pips": -465.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": -403.0
+      "dist_pips": -415.0
     }
   ],
   "nearest": {
     "name": "hard_floor",
     "price": 1.135,
-    "dist_pips": -403.0
+    "dist_pips": -415.0
   },
-  "box_pos": -4.03,
+  "box_pos": -4.15,
   "regime": "RUNNING",
   "gate": {
     "open": false,
@@ -78,11 +87,11 @@
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 37.8. Daily bias agrees. Nearest level 1.135 (-403.0 pips). No trigger at a level yet."
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 35.5. Daily bias agrees. Nearest level 1.135 (-415.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility expanding (4H ATR ~24 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility expanding (4H ATR ~25 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
