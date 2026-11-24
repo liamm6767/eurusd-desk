@@ -13,14 +13,30 @@
   ],
   "setup": {
     "trend": "down",
-    "ema8": 1.09277,
-    "dist_ema8_pips": -24.7,
+    "ema8": 1.09243,
+    "dist_ema8_pips": -15.3,
     "waiting": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
     "plan": null
   },
   "patterns": [
     {
-      "name": "Bearish engulfing",
+      "name": "Doji",
+      "dir": "neutral",
+      "tier": "noise",
+      "at_level": false,
+      "with_trend": false,
+      "note": "A pattern with no level is just a candle. Ignore it."
+    },
+    {
+      "name": "Hammer / bullish pin",
+      "dir": "bullish",
+      "tier": "watch",
+      "at_level": false,
+      "with_trend": false,
+      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+    },
+    {
+      "name": "Shooting star / bearish pin",
       "dir": "bearish",
       "tier": "watch",
       "at_level": false,
@@ -28,78 +44,78 @@
       "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
     },
     {
-      "name": "Evening star",
-      "dir": "bearish",
-      "tier": "watch",
+      "name": "Inside bar",
+      "dir": "neutral",
+      "tier": "noise",
       "at_level": false,
-      "with_trend": true,
-      "note": "Missing full confluence \u2014 it needs a level AND the trend or RSI to agree. Wait for confirmation."
+      "with_trend": false,
+      "note": "A pattern with no level is just a candle. Ignore it."
     }
   ],
   "strategy": null,
   "timeframe": "4H entry \u00b7 Daily bias",
-  "updated": "11:41:02",
-  "updated_full": "Tue 24 Nov 2026 11:41 GST",
-  "price": 1.0903,
+  "updated": "12:01:44",
+  "updated_full": "Tue 24 Nov 2026 12:01 GST",
+  "price": 1.0909,
   "bias": "Bearish",
-  "confidence": 94,
-  "confidence_why": "4H and Daily agree, momentum with the trend, volatility is expanding",
-  "analysis": "EUR/USD is leaning down on the 4-hour, 94% conviction. The Daily bias agrees. Volatility is expanding \u2014 the market's running. Nearest structure: hard floor (447.0 pips away). A firm dollar (+0.02% DXY) is a tailwind for the read.",
+  "confidence": 82,
+  "confidence_why": "4H and Daily agree, momentum with the trend",
+  "analysis": "EUR/USD is leaning down on the 4-hour, 82% conviction. The Daily bias agrees. Volatility is quiet \u2014 coiled and choppy. Nearest structure: hard floor (441.0 pips away). A firm dollar (+0.03% DXY) is a tailwind for the read.",
   "watch": "Downtrend intact (4H + Daily) \u2014 waiting for a pullback to the 8-EMA to go short.",
   "tf4": {
-    "ema8": 1.09277,
-    "ema21": 1.09558,
-    "ema55": 1.10104,
-    "rsi": 33.0052,
-    "atr": 0.00239,
+    "ema8": 1.09243,
+    "ema21": 1.09519,
+    "ema55": 1.1007,
+    "rsi": 34.24007,
+    "atr": 0.00223,
     "trend": "BEARISH"
   },
   "daily": {
-    "ema8": 1.09918,
-    "ema21": 1.10819,
-    "ema55": 1.12208,
+    "ema8": 1.09931,
+    "ema21": 1.10824,
+    "ema55": 1.1221,
     "trend": "BEARISH"
   },
-  "atr_pips": 23.9,
+  "atr_pips": 22.3,
   "levels": [
     {
       "name": "ceiling",
       "price": 1.145,
-      "dist_pips": -547.0
+      "dist_pips": -541.0
     },
     {
       "name": "floor",
       "price": 1.14,
-      "dist_pips": -497.0
+      "dist_pips": -491.0
     },
     {
       "name": "hard_floor",
       "price": 1.135,
-      "dist_pips": -447.0
+      "dist_pips": -441.0
     }
   ],
   "nearest": {
     "name": "hard_floor",
     "price": 1.135,
-    "dist_pips": -447.0
+    "dist_pips": -441.0
   },
-  "box_pos": -4.47,
-  "regime": "RUNNING",
+  "box_pos": -4.41,
+  "regime": "CHOPPY",
   "gate": {
     "open": false,
     "trigger": false,
     "direction_aligned": true,
-    "regime_ok": true
+    "regime_ok": false
   },
   "verdict": "NO TRADE \u2014 PATIENCE",
   "desks": {
     "chartist": {
       "status": "hold",
-      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; running. RSI 33.0. Daily bias agrees. Nearest level 1.135 (-447.0 pips). No trigger at a level yet."
+      "read": "4H bearish (8/21/55 stack), price under the 8-EMA; choppy. RSI 34.2. Daily bias agrees. Nearest level 1.135 (-441.0 pips). No trigger at a level yet."
     },
     "quant": {
       "status": "hold",
-      "read": "Volatility expanding (4H ATR ~24 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
+      "read": "Volatility dead/coiling (4H ATR ~22 pips). No edge in a low-vol mid-range \u2014 size would be minimum."
     },
     "risk": {
       "status": "go",
